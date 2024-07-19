@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../components/images/sb-logo.svg'; // Ensure the path is correct
-import styles from '../components/Header.module.css'; // Import the CSS Module
+import logo from '../components/images/sb-logo.svg'; 
+import styles from '../components/Header.module.css'; 
 
 const Header: React.FC = () => {
   return (
