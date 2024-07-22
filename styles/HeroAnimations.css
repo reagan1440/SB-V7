@@ -1,0 +1,126 @@
+body {
+    background: #eee;
+  }
+  
+  @keyframes laptop-slides-right {
+    0% {
+      bottom: 0;
+      right: 35%;
+    }
+    to {
+      bottom: 0;
+      right: 0;
+    }
+  }
+  
+  @keyframes laptop-slides-left {
+    0% {
+      bottom: 0;
+      right: 0;
+    }
+    to {
+      bottom: 0;
+      right: 35%;
+    }
+  }
+  
+  @keyframes phone-slides-down {
+    0% {
+      bottom: -55%;
+      right: 4%;
+    }
+    to {
+      bottom: -130%;
+      right: 4%;
+    }
+  }
+  
+  @keyframes phone-slides-up {
+    0% {
+      bottom: -130%;
+      right: 4%;
+    }
+    to {
+      bottom: -55%;
+      right: 4%;
+    }
+  }
+  
+  @keyframes logo-slides-down {
+    0% {
+      bottom: 80%;
+      left: 50%;
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+    to {
+      bottom: 50%;
+      left: 50%;
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+  }
+  
+  *, ::after, ::before {
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .masonry-column {
+    position: relative;
+  }
+  
+  .masonry-column.skinbones .first-image {
+    max-width: 75%;
+    position: absolute;
+  }
+  
+  .masonry-column.skinbones .second-image {
+    max-width: 42%;
+    position: absolute;
+  }
+  
+  .masonry-column.skinbones .logo {
+    position: absolute;
+    max-width: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .masonry-column.skinbones:hover .logo {
+    animation: logo-slides-up .8s forwards;
+  }
+  
+  .masonry-column.skinbones:hover .first-image {
+    animation: laptop-slides-left .8s forwards;
+  }
+  
+  .masonry-column.skinbones:hover .second-image {
+    animation: phone-slides-up .8s forwards;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .masonry-column.skinbones .logo {
+      max-width: 75%;
+    }
+  
+    .masonry-column {
+      grid-row-end: auto;
+      grid-row-start: span 2;
+    }
+  
+    .masonry-column:first-child,
+    .masonry-column:last-child {
+      grid-row-end: auto;
+      grid-row-start: span 1;
+    }
+  }
+  

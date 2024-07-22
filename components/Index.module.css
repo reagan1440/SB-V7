@@ -70,6 +70,8 @@
 }
 
 .contentBreak {
-  margin: 10px 0; /* Space around line breaks */
+  margin: 20px 0; /* Space around line breaks */
+  gap: 10px;
+
 }
 
