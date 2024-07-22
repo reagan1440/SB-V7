@@ -8,7 +8,12 @@ import logoImage from '../components/images/aaa-logo.png';
 import ethosPhoneA from '../components/images/ethos-phone-a-comp.png';
 import ethosIcon from '../components/images/ethos-icon-comp.png';
 import ethosPhoneB from '../components/images/ethos-phone-b-comp.png';
+import utilityLaptopComp from '../components/images/utility-laptop-comp.png';
+import utilityLogo from '../components/images/utility-logo.png';
+import utilityPhoneComp from '../components/images/utility-phone-comp.png';
+import utilityTabletComp from '../components/images/utility-tablet-comp.png';
 
+// Existing Components
 export const HeroAnimatedSection = () => {
   const [hovered, setHovered] = useState(false);
 
@@ -113,7 +118,7 @@ export const SecondContainer = () => {
       </div>
       <div style={{
         position: 'absolute',
-        bottom: hovered ? '130px' : '-200px',
+        bottom: hovered ? '350px' : '-200px',
         left: hovered ? '25px' : '-200px',
         width: '200px',
         height: 'auto',
@@ -132,6 +137,7 @@ export const SecondContainer = () => {
   );
 };
 
+
 export const ThirdContainer = () => {
   const [hovered, setHovered] = useState(false);
 
@@ -141,7 +147,7 @@ export const ThirdContainer = () => {
         position: 'relative',
         width: '100%',
         height: '100%',
-        background: hovered ? '#F498D1' : '#ddd',
+        background: hovered ? 'linear-gradient(54.76deg, #DF7344, #E03A44)' : '#eee',
         overflow: 'hidden',
         transition: 'background 0.5s ease',
         borderRadius: '10px',
@@ -153,7 +159,7 @@ export const ThirdContainer = () => {
         position: 'absolute',
         top: '0',
         right: hovered ? '10%' : '0',
-        width: '50%',
+        width: '70%',
         height: '100%',
         transition: 'right 0.5s ease',
         zIndex: 2,
@@ -183,10 +189,10 @@ export const ThirdContainer = () => {
       </div>
       <div style={{
         position: 'absolute',
-        bottom: hovered ? '10px' : '-30%',
-        left: hovered ? '5%' : '-50%',
-        width: '60%',
-        height: '70%',
+        bottom: hovered ? '20px' : '-30%',
+        left: hovered ? '-15%' : '-85%',
+        width: '80%',
+        height: '80%',
         transition: 'bottom 0.8s ease-out, left 0.8s ease-out',
         zIndex: 1,
       }}>
@@ -201,13 +207,110 @@ export const ThirdContainer = () => {
   );
 };
 
+// FourthContainer Component
+export const FourthContainer = () => {
+  const [hovered, setHovered] = useState(false);
 
+  return (
+    <div
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        background: hovered ? 'linear-gradient(76.35deg, #000000, #041C2C)' : '#eee',
+        overflow: 'hidden',
+        borderRadius: '10px',
+      }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+  <div style={{
+  position: 'absolute',
+  top: hovered ? '45px' : '30px',  // Corrected property logic
+  right: hovered ? '-20%' : '0',
+  width: '100%',
+  height: '90%',
+  overflow: 'hidden',
+  transition: 'right 0.8s ease-out, top 0.8s ease-out, transform 0.8s ease-out',  // Include transform in transition
+  transform: hovered ? 'scale(0.9)' : 'scale(1)',  // Scale down when hovered
+  zIndex: 1,
+}}>
+  <Image
+    src={utilityLaptopComp}
+    alt="Utility Laptop"
+    layout="fill"
+    objectFit="contain"
+  />
+</div>
+
+
+      {/* Logo with Drop-in Animation */}
+      <div style={{
+        position: 'absolute',
+        top: hovered ? '10px' : '-200px',
+        right: '10px',
+        width: '200px',
+        height: 'auto',
+        transition: 'top 0.8s ease-out',
+        zIndex: 2,
+      }}>
+        <Image
+          src={utilityLogo}
+          alt="Utility Logo"
+          layout="intrinsic"
+          width={200}
+        />
+      </div>
+
+      {/* Phone and Tablet Images Aligned */}
+      <div style={{
+        position: 'absolute',
+        bottom: '0',
+        right: hovered ? '380px' : '-500px',
+        top: hovered ? '10px' : '-200px',
+        display: 'flex',
+        gap: '0px',
+        transition: 'right 0.8s ease-out',
+        zIndex: 1,
+      }}>
+        {/* Phone Image */}
+        <div style={{
+          width: '100px',
+          height: 'auto',
+        }}>
+          <Image
+            src={utilityPhoneComp}
+            alt="Utility Phone"
+            layout="intrinsic"
+            width={200}
+          />
+        </div>
+
+        {/* Tablet Image */}
+        <div style={{
+          width: '200px',
+          height: 'auto',
+        }}>
+          <Image
+            src={utilityTabletComp}
+            alt="Utility Tablet"
+            layout="intrinsic"
+            width={200}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+// PageLayout Component
 const PageLayout = () => {
   return (
     <div style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(4, 1fr)',
-      gridTemplateRows: '300px 500px',
+      gridTemplateRows: '350px 600px', // Increased heights here
       gap: '20px',
       margin: '0 22%',
     }}>
@@ -216,7 +319,7 @@ const PageLayout = () => {
         gridRow: '1 / 2',
         backgroundColor: '#ddd',
         position: 'relative',
-        height: '300px',
+        height: '350px', // Increased height here
       }}>
         <HeroAnimatedSection />
       </div>
@@ -225,7 +328,7 @@ const PageLayout = () => {
         gridRow: '1 / 3',
         backgroundColor: '#ddd',
         position: 'relative',
-        height: '500px',
+        height: '600px', // Increased height here
       }}>
         <SecondContainer />
       </div>
@@ -234,7 +337,7 @@ const PageLayout = () => {
         gridRow: '2 / 3',
         backgroundColor: '#ddd',
         position: 'relative',
-        height: '500px',
+        height: '600px', // Increased height here
       }}>
         <ThirdContainer />
       </div>
@@ -243,12 +346,14 @@ const PageLayout = () => {
         gridRow: '2 / 3',
         backgroundColor: '#ddd',
         position: 'relative',
-        height: '300px',
-        marginTop: '200px',
+        height: '350px', // Increased height here
+        marginTop: '250px', // Adjusted margin to fit new height
       }}>
+        <FourthContainer />
       </div>
     </div>
   );
 };
 
 export default PageLayout;
+
