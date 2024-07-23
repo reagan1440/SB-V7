@@ -36,7 +36,7 @@ export const HeroAnimatedSection = () => {
         bottom: '0',
         left: hovered ? '-20%' : '0',
         width: '100%',
-        height: '100%',
+        height: '90%',
         transition: 'left 0.8s ease-out',
         zIndex: 1,
       }}>
@@ -49,9 +49,9 @@ export const HeroAnimatedSection = () => {
       </div>
       <div style={{
         position: 'absolute',
-        top: hovered ? '10%' : '-50%',
-        left: '10%',
-        width: '300px',
+        top: hovered ? '5%' : '-50%',
+        left: hovered ? '5%' : '-40%',
+        width: '400px',
         height: 'auto',
         transition: 'top 0.8s ease-out',
         zIndex: 2,
@@ -60,7 +60,7 @@ export const HeroAnimatedSection = () => {
           src={logoSkinbones}
           alt="SkinBones Logo"
           layout="intrinsic"
-          width={300}
+          width={400}
         />
       </div>
       <div style={{
@@ -158,7 +158,7 @@ export const ThirdContainer = () => {
       <div style={{
         position: 'absolute',
         top: '0',
-        right: hovered ? '10%' : '0',
+        right: hovered ? '5%' : '0',
         width: '70%',
         height: '100%',
         transition: 'right 0.5s ease',
@@ -189,10 +189,10 @@ export const ThirdContainer = () => {
       </div>
       <div style={{
         position: 'absolute',
-        bottom: hovered ? '20px' : '-30%',
-        left: hovered ? '-15%' : '-85%',
-        width: '80%',
-        height: '80%',
+        bottom: hovered ? '-50px' : '-30%',
+        left: hovered ? '-20%' : '-85%',
+        width: '90%',
+        height: '90%',
         transition: 'bottom 0.8s ease-out, left 0.8s ease-out',
         zIndex: 1,
       }}>
@@ -226,13 +226,13 @@ export const FourthContainer = () => {
     >
   <div style={{
   position: 'absolute',
-  top: hovered ? '45px' : '30px',  // Corrected property logic
+  top: hovered ? '45px' : '30px', 
   right: hovered ? '-20%' : '0',
   width: '100%',
   height: '90%',
   overflow: 'hidden',
-  transition: 'right 0.8s ease-out, top 0.8s ease-out, transform 0.8s ease-out',  // Include transform in transition
-  transform: hovered ? 'scale(0.9)' : 'scale(1)',  // Scale down when hovered
+  transition: 'right 0.8s ease-out, top 0.8s ease-out, transform 0.8s ease-out',  
+  transform: hovered ? 'scale(0.8)' : 'scale(1)', 
   zIndex: 1,
 }}>
   <Image
@@ -244,7 +244,6 @@ export const FourthContainer = () => {
 </div>
 
 
-      {/* Logo with Drop-in Animation */}
       <div style={{
         position: 'absolute',
         top: hovered ? '10px' : '-200px',
@@ -266,16 +265,15 @@ export const FourthContainer = () => {
       <div style={{
         position: 'absolute',
         bottom: '0',
-        right: hovered ? '380px' : '-500px',
+        right: hovered ? '350px' : '-500px',
         top: hovered ? '10px' : '-200px',
         display: 'flex',
-        gap: '0px',
         transition: 'right 0.8s ease-out',
         zIndex: 1,
       }}>
         {/* Phone Image */}
         <div style={{
-          width: '100px',
+          width: '120px',
           height: 'auto',
         }}>
           <Image
@@ -288,7 +286,7 @@ export const FourthContainer = () => {
 
         {/* Tablet Image */}
         <div style={{
-          width: '200px',
+          width: '220px',
           height: 'auto',
         }}>
           <Image

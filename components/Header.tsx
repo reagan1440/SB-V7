@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../components/images/sb-logo.svg'; 
+import logo from '../components/images/sb-logo.svg';
 import styles from '../components/Header.module.css'; 
 
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logoContainer}>
-        <Image src={logo} alt="Logo" width={250} height={100} />
-      </div>
+    <div className={styles.logoContainer}>
+      <Image src={logo} alt="Logo" width={250} height={100} />
+    </div>
       <nav className={styles.nav}>
         <Link href="/">Home</Link>
         <Link href="/mobile-apps">Mobile Apps</Link>
