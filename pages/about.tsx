@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image'; 
 import AboutHero from '../components/images/marietta.png';
 import styles from '../components/About.module.css';
+import Footer from '../components/Footer';
 
 const AboutPage: React.FC = () => (
   <Layout title="SolutionBuilt">

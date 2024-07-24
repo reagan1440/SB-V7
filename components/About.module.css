@@ -4,27 +4,49 @@
     height: 50vh;
     background: linear-gradient(78.66deg, #000d18, #00213e);
     display: flex;
-    align-items: flex-start; /* Align items at the top */
-    padding-bottom: 20px; 
+    align-items: flex-start; 
+    padding-bottom: 20px;
     box-sizing: border-box;
-    overflow: hidden; 
+    overflow: hidden;
   }
   
   .imageWrapper {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     width: 100%;
-    height: auto; 
+    height: auto;
   }
   
   .textBox {
     position: relative;
     color: #fff;
     padding: 10px 20px;
-    margin-left: 20%; /* Add margin on the right */
-    margin-top: 5%; 
+    margin-left: 21.5%; 
+    margin-top: 7%;
     z-index: 10;
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutHeroContainer {
+      height: 40vh; 
+      padding-bottom: 10px; 
+    }
+  
+    .textBox {
+      margin-left: 10%;
+      margin-top: 15%; 
+      font-size: 28px; 
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .textBox {
+      margin-left: 2%; 
+      font-size: 16px; 
+      margin-top: 22%;
+    }
   }
   

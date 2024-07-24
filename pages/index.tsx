@@ -7,8 +7,6 @@ import HeroAnimatedSection from '../components/HeroAnimation';
 import TabbedContent from '../components/TabbedContent';
 import SupportBlock from '../components/SupportBlock';
 import Footer from '../components/Footer';
-
-// Import SVGs
 import CareXMLogo from '../components/images/carexm.svg';
 import ArthritisLogo from '../components/images/arthritis.svg';
 import BuckheadLogo from '../components/images/buckhead-life.svg';

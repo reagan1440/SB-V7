@@ -1,19 +1,18 @@
-/* Base Styles for the Video */
 .heroContainer {
   position: relative; /* For positioning the video */
   width: 100%; /* Full width of the container */
-  height: 0; /* Initial height set to 0 */
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  overflow: hidden; /* Hide overflow */
+  height: 0; 
+  padding-top: 56.25%; 
+  overflow: hidden; 
 }
 
 .heroVideo {
-  position: absolute; /* Position absolutely within the container */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%; /* Full width of the container */
   height: 100%; /* Full height of the container */
-  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  object-fit: cover; 
 }
 
 /* Responsive Styles */
