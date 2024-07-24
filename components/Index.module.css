@@ -97,17 +97,184 @@ margin-bottom: 60px;
 }
 
 
-.container {
+.svgContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; 
   align-items: center;
-  margin: 0 22%; /* 22% margin on both left and right */
-  padding: 20px 0; /* Optional padding for top and bottom */
+  margin: 20px 0; 
 }
 
-.image {
-  width: calc((100% - 44%) / 4); /* Responsive width calculation */
-  height: auto; /* Maintain aspect ratio */
-  transition: transform 0.3s ease;
+.svgContainer img {
+  margin: 60px 80px; 
+  max-width: 100%;
+  height: auto;
 }
+
+.support1 {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+  color: #00213e;
+}
+.weOfferOngoing {
+  width: 1440px;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  line-height: 60px;
+  display: inline-block;
+}
+.weProvideMaintenance {
+  width: 1440px;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 38px;
+  color: #000;
+  display: inline-block;
+}
+.siteMaintenanceIcon {
+  width: 85.5px;
+  position: relative;
+  height: 74.7px;
+}
+.siteMaintenance {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.siteMaintenanceParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  cursor: pointer;
+}
+.siteHostingIcon {
+  width: 87.5px;
+  position: relative;
+  height: 61.3px;
+}
+.appMaintenanceIcon {
+  width: 83.7px;
+  position: relative;
+  height: 73.2px;
+}
+.deviceManagementIcon {
+  width: 91.7px;
+  position: relative;
+  height: 63.3px;
+}
+.deviceManagementParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.analyticsIcon {
+  width: 75px;
+  position: relative;
+  height: 69px;
+}
+.integrationsIcon {
+  width: 89.9px;
+  position: relative;
+  height: 82.9px;
+}
+.diagnosticsIcon {
+  width: 87.6px;
+  position: relative;
+  height: 82.6px;
+}
+.icons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 40px 0px;
+  gap: 97px;
+  font-size: 16px;
+  color: #000;
+}
+.ringsIcon {
+  position: absolute;
+  height: 70.42%;
+  width: 27.47%;
+  top: 15.49%;
+  right: 0%;
+  bottom: 14.08%;
+  left: 72.53%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: 0.3;
+}
+.linkButtonChild {
+  position: absolute;
+  height: 11.27%;
+  width: 2.75%;
+  top: 45.07%;
+  right: 12.64%;
+  bottom: 43.66%;
+  left: 84.62%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+}
+.linkButtonItem {
+  position: absolute;
+  height: 2.82%;
+  width: 21.98%;
+  top: 49.3%;
+  right: 13.74%;
+  bottom: 47.89%;
+  left: 64.29%;
+  background-color: #000;
+}
+.linkButtonInner {
+  position: absolute;
+  height: 2.82%;
+  width: 0.55%;
+  top: 64.79%;
+  right: 98.9%;
+  bottom: 32.39%;
+  left: 0.55%;
+  background-color: #000;
+  opacity: 0;
+}
+.learnMore {
+  position: absolute;
+  top: 38.03%;
+  left: 0%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.linkButton {
+  width: 182px;
+  position: relative;
+  height: 71px;
+  text-align: right;
+  font-size: 12px;
+}
+.support {
+  position: relative;
+  background-color: #e8e8e8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 100px 380px;
+  box-sizing: border-box;
+  gap: 20px;
+  text-align: left;
+  font-size: 40px;
+  color: #33658a;
+  font-family: Capitana;
+}
+
 

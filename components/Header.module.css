@@ -15,7 +15,7 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  margin-left: 180px; /* Adjust to align with the left edge */
+  margin-left: 180px; 
 }
 
 .logoContainer img {

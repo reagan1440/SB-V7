@@ -1,0 +1,184 @@
+.fullPageContainer {
+    position: relative;
+    width: 100vw;
+    height: 45rem;
+    overflow: hidden;
+  }
+  
+  .fullPageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-gradient, linear-gradient(78.66deg, #007BFF, #007BFF));
+    z-index: -1; /* Place behind content */
+    transition: background 0.3s ease;
+  }
+  
+  .contentContainer {
+    display: flex;
+    height: 120%; 
+    padding-left: 22%;
+    position: relative;
+  }
+  
+  .tabs {
+    font-family: inherit;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 60px;
+    text-wrap: nowrap;
+  }
+  
+  .tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: white;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+  
+  .tab:hover {
+    transform: translateX(10px);
+  }
+  
+  .active {
+    font-weight: bold;
+    border-left: 3px solid #007BFF;
+  }
+  
+  .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    padding-bottom: 0;  
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+  }
+  
+  .tabImage {
+    width: 80%; 
+    height: auto;
+    object-fit: contain; 
+  }
+  
+  /* Text overlay style */
+  .textOverlay {
+    position: absolute;
+    top: 20px;
+    right: 60%;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    text-align: left;
+  }
+  
+  .textOverlay h2 {
+    margin: 0;
+  }
+  
+  .textContainer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .textBox {
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px; 
+    width: 200px; 
+    text-align: center;
+  }
+  
+  /* Default image container */
+  .capabilitiesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .defaultImage {
+    width: 60%; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Specific container styles for each tab with adjustable sizes */
+  .brandingContainer {
+    width: 80%; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .digitalStrategyContainer {
+    width: 90%; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .uxContainer {
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .webDevContainer {
+    width: 85%; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .appDevContainer {
+    width: 65%; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .maintenanceContainer {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .integrationsContainer {
+    width: 90%; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Ensure the container matches the active tab */
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .digitalStrategyContainer {
+    padding-bottom: 10px;
+  }
