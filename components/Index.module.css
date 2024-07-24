@@ -1,20 +1,40 @@
-/*  hero header  */
-
+/* Base Styles for the Video */
 .heroContainer {
-  width: 100%;
-  height: 100vh; 
-  position: relative; 
-  overflow: hidden;
+  position: relative; /* For positioning the video */
+  width: 100%; /* Full width of the container */
+  height: 0; /* Initial height set to 0 */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden; /* Hide overflow */
 }
 
 .heroVideo {
-  position: absolute; 
+  position: absolute; /* Position absolutely within the container */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
 }
+
+/* Responsive Styles */
+@media (max-width: 1500px) {
+  .heroContainer {
+    padding-top: 56.25%; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroContainer {
+    padding-top: 56.25%; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    padding-top: 56.25%; /* Maintain aspect ratio */
+  }
+}
+
 
 .heroContent {
   position: absolute;
@@ -96,7 +116,68 @@ margin-bottom: 60px;
   margin: 20px 0;
 }
 
+/*  support block css */
 
+.support {
+  position: relative;
+  background-color: #e8e8e8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 100px 22%;
+  box-sizing: border-box;
+  gap: 20px;
+  text-align: left;
+  font-size: 40px; /* Base font size */
+  color: #33658a;
+  font-family: Capitana;
+}
+
+.support1 {
+  font-family: Capitana;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+  color: #00213e;
+  font-size: 40px; /* Base font size */
+}
+
+.weOfferOngoing {
+  width: 100%;
+  position: relative;
+  font-size: 22px; /* Base font size */
+  letter-spacing: 0.02em;
+  line-height: 60px;
+  display: inline-block;
+}
+
+.weProvideMaintenance {
+  width: 100%;
+  position: relative;
+  font-size: 18px; /* Base font size */
+  letter-spacing: 0.02em;
+  line-height: 38px;
+  color: #000;
+  display: inline-block;
+}
+
+.icons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 40px 0px;
+  gap: 97px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Base Styles */
 .svgContainer {
   display: flex;
   justify-content: center; 
@@ -110,171 +191,193 @@ margin-bottom: 60px;
   height: auto;
 }
 
-.support1 {
+/* Responsive Styles */
+@media (max-width: 1800px) {
+  .svgContainer {
+    margin: 15px 0; /* Adjust margin */
+  }
+
+  .svgContainer img {
+    margin: 30px 40px; /* Reduce image margin */
+    width: 180px; /* Adjust image size */
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .svgContainer {
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .svgContainer img {
+    margin: 20px 30px; /* Further reduce image margin */
+    width: 150px; /* Adjust image size */
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .svgContainer {
+    margin: 5px 0; /* Adjust margin */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align images */
+  }
+
+  .svgContainer img {
+    margin: 10px 0; /* Reduce image margin */
+    width: 120px; /* Adjust image size */
+    height: auto;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1500px) {
+  .support {
+      padding: 100px 3%;
+  }
+
+  .support1 {
+      font-size: 32px; /* Scale down font size */
+  }
+
+  .weOfferOngoing {
+      font-size: 20px; /* Scale down font size */
+  }
+
+  .weProvideMaintenance {
+      font-size: 16px; /* Scale down font size */
+  }
+
+  .icons {
+      gap: 50px; /* Adjust gap */
+  }
+}
+
+@media (max-width: 1024px) {
+  .support {
+      padding: 100px 5%;
+  }
+
+  .support1 {
+      font-size: 28px; /* Scale down font size */
+  }
+
+  .weOfferOngoing {
+      font-size: 18px; /* Scale down font size */
+  }
+
+  .weProvideMaintenance {
+      font-size: 14px; /* Scale down font size */
+  }
+
+  .icons {
+      gap: 40px; /* Adjust gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .support {
+      padding: 80px 5%;
+      font-size: 32px; /* Adjust base font size */
+  }
+
+  .support1 {
+      font-size: 24px; /* Scale down font size */
+  }
+
+  .weOfferOngoing {
+      font-size: 16px; /* Scale down font size */
+  }
+
+  .weProvideMaintenance {
+      font-size: 12px; /* Scale down font size */
+  }
+
+  .icons {
+      flex-direction: column; /* Stack icons vertically */
+      gap: 20px; /* Adjust gap */
+  }
+}
+
+
+/* lets get started css */
+
+.bottomCta {
   position: relative;
-  letter-spacing: 0.02em;
-  line-height: 30px;
-  color: #00213e;
-}
-.weOfferOngoing {
-  width: 1440px;
-  position: relative;
-  font-size: 22px;
-  letter-spacing: 0.02em;
-  line-height: 60px;
-  display: inline-block;
-}
-.weProvideMaintenance {
-  width: 1440px;
-  position: relative;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  line-height: 38px;
-  color: #000;
-  display: inline-block;
-}
-.siteMaintenanceIcon {
-  width: 85.5px;
-  position: relative;
-  height: 74.7px;
-}
-.siteMaintenance {
-  position: relative;
-  letter-spacing: 0.02em;
-}
-.siteMaintenanceParent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  cursor: pointer;
-}
-.siteHostingIcon {
-  width: 87.5px;
-  position: relative;
-  height: 61.3px;
-}
-.appMaintenanceIcon {
-  width: 83.7px;
-  position: relative;
-  height: 73.2px;
-}
-.deviceManagementIcon {
-  width: 91.7px;
-  position: relative;
-  height: 63.3px;
-}
-.deviceManagementParent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-}
-.analyticsIcon {
-  width: 75px;
-  position: relative;
-  height: 69px;
-}
-.integrationsIcon {
-  width: 89.9px;
-  position: relative;
-  height: 82.9px;
-}
-.diagnosticsIcon {
-  width: 87.6px;
-  position: relative;
-  height: 82.6px;
-}
-.icons {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 40px 0px;
-  gap: 97px;
-  font-size: 16px;
-  color: #000;
-}
-.ringsIcon {
-  position: absolute;
-  height: 70.42%;
-  width: 27.47%;
-  top: 15.49%;
-  right: 0%;
-  bottom: 14.08%;
-  left: 72.53%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: contain;
-  opacity: 0.3;
-}
-.linkButtonChild {
-  position: absolute;
-  height: 11.27%;
-  width: 2.75%;
-  top: 45.07%;
-  right: 12.64%;
-  bottom: 43.66%;
-  left: 84.62%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: contain;
-}
-.linkButtonItem {
-  position: absolute;
-  height: 2.82%;
-  width: 21.98%;
-  top: 49.3%;
-  right: 13.74%;
-  bottom: 47.89%;
-  left: 64.29%;
-  background-color: #000;
-}
-.linkButtonInner {
-  position: absolute;
-  height: 2.82%;
-  width: 0.55%;
-  top: 64.79%;
-  right: 98.9%;
-  bottom: 32.39%;
-  left: 0.55%;
-  background-color: #000;
-  opacity: 0;
-}
-.learnMore {
-  position: absolute;
-  top: 38.03%;
-  left: 0%;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-.linkButton {
-  width: 182px;
-  position: relative;
-  height: 71px;
-  text-align: right;
-  font-size: 12px;
-}
-.support {
-  position: relative;
-  background-color: #e8e8e8;
+  background-color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 100px 380px;
+  align-items: flex-start; 
+  justify-content: center;
+  padding: 5% 10%; 
   box-sizing: border-box;
   gap: 20px;
-  text-align: left;
-  font-size: 40px;
+  text-align: left; 
+  font-size: 1.5rem;
   color: #33658a;
   font-family: Capitana;
 }
+
+.letsGetStarted {
+  margin: 0 15%; 
+  letter-spacing: 0.02em;
+  color: #000;
+  font-size: 2rem; 
+}
+
+.ifYoureLooking {
+  margin: 0 15%; 
+  width: 100%; 
+  font-size: 1.2rem; 
+  letter-spacing: 0.02em;
+  line-height: 1.5; 
+}
+
+
+@media (max-width: 1500px) {
+  .bottomCta {
+    padding: 5% 8%; 
+  }
+
+  .letsGetStarted {
+    font-size: 1.8rem; 
+  }
+
+  .ifYoureLooking {
+    font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .bottomCta {
+    padding: 5% 6%; 
+  }
+
+  .letsGetStarted {
+    font-size: 1.6rem; 
+  }
+
+  .ifYoureLooking {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .bottomCta {
+    padding: 5% 4%; 
+  }
+
+  .letsGetStarted {
+    font-size: 1.4rem; 
+  }
+
+  .ifYoureLooking {
+    font-size: 0.9rem; 
+  }
+}
+
+
 
 

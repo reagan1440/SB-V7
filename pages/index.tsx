@@ -6,6 +6,7 @@ import styles from '../components/Index.module.css';
 import HeroAnimatedSection from '../components/HeroAnimation';
 import TabbedContent from '../components/TabbedContent';
 import SupportBlock from '../components/SupportBlock';
+import Footer from '../components/Footer';
 
 // Import SVGs
 import CareXMLogo from '../components/images/carexm.svg';
@@ -14,7 +15,7 @@ import BuckheadLogo from '../components/images/buckhead-life.svg';
 import GpbLogo from '../components/images/gpb.svg';
 
 const IndexPage: React.FC = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <Layout title="SolutionBuilt">
     <div className={styles.heroContainer}>
       <video
         src="/videos/sb-website-video-2023-final.mp4"
@@ -54,6 +55,11 @@ const IndexPage: React.FC = () => (
     </div>
     <TabbedContent/>
     <SupportBlock />
+    <div className={styles.bottomCta}>
+<b className={styles.letsGetStarted}>Let’s Get Started</b>
+<div className={styles.ifYoureLooking}>If you’re looking for website designers or mobile app developers in the Atlanta area, contact the SolutionBuilt team today.</div>
+</div>
+    <Footer />
   </Layout>
 );
 

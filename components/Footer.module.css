@@ -1,0 +1,135 @@
+.footer {
+    background: linear-gradient(78.66deg, #000d18, #00213e);
+    color: #fff;
+    padding: 15px 0;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 0 22%;
+    max-width: calc(100% - 44%);
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto 25px;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerText {
+    flex: 1;
+    text-align: left;
+}
+
+.joinTeam {
+    flex: 1;
+    text-align: center;
+}
+
+.socialIcons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.socialIcons a {
+    color: #fff;
+}
+
+.socialIcons img {
+    vertical-align: middle;
+}
+
+/* Responsive Styles */
+@media (max-width: 1800px) {
+    .container {
+        margin: 0 3%;
+        max-width: calc(100% - 6%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin: 0 10%;
+        max-width: calc(100% - 20%);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 5%;
+        max-width: calc(100% - 10%);
+    }
+
+    .topSection {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .bottomSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerText,
+    .joinTeam,
+    .socialIcons {
+        flex: 1;
+    }
+
+    .socialIcons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

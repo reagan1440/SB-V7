@@ -1,10 +1,10 @@
-import Layout from '../components/Layout'; 
+import Layout from '../components/Layout';
 
-const Mobileapps = () => (
-  <Layout title="About | Next.js + TypeScript Example">
-    <h1>Mobile apps</h1>
-    <p>This is the Mobile Apps page</p>
+const MobileAppsPage = () => (
+  <Layout title="Mobile Apps">
+    <h1>Mobile Apps</h1>
+    <p>This is the Mobile Apps page. Here you can showcase information about mobile app development services.</p>
   </Layout>
 );
 
-export default Mobileapps;
+export default MobileAppsPage;
