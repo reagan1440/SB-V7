@@ -50,3 +50,141 @@
     }
   }
   
+
+/* under hero content section */
+
+/* General Content Styles */
+.aboutContent {
+    position: relative;
+    background-color: #fff;
+    width: calc(100% - 44%);
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0%;
+    box-sizing: border-box;
+    gap: 60px;
+    text-align: left;
+    font-size: 22px;
+    color: #33658a;
+    font-family: Capitana, sans-serif;
+  }
+  
+  /* Founding Information */
+  .foundedIn2004 {
+    width: 100%;
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 1.6; 
+    display: block;
+  }
+  
+  /* Today SolutionBuilt Container */
+  .todaySolutionbuiltIsContainer {
+    width: 100%;
+    position: relative;
+    font-size: 3.5rem; /* Adjusted font-size for better mobile readability */
+    letter-spacing: 0.02em;
+    display: block;
+    color: #b5b5b5;
+    text-align: left; /* Center text on smaller screens */
+  }
+  
+  .fullService {
+    font-weight: 900;
+    background: linear-gradient(113.49deg, #7fc6a4, #33658a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .businessesOfAll {
+    font-weight: 900;
+    background: linear-gradient(78.66deg, #00213e, #33658a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Our Digital Marketing Container */
+  .ourDigitalMarketingContainer {
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    color: #000;
+    display: block;
+  }
+  
+  /* Buttons Section */
+  .buttons {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Adjust gap for spacing between buttons */
+    width: 100%;
+  }
+  
+  .linkButton, .linkButton1 {
+    position: relative;
+    width: 235px;
+    height: 71px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .linkButton img, .linkButton1 img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.3;
+  }
+  
+  .linkButtonChild, .linkButtonChild1, .linkButtonItem, .linkButtonInner {
+    position: absolute;
+    background-color: #000;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .content {
+      padding: 20px 5%; 
+      width: 100%; 
+    }
+  
+    .todaySolutionbuiltIsContainer {
+      font-size: 20px; /* Adjust font-size for readability */
+    }
+  
+    .ourDigitalMarketingContainer {
+      font-size: 16px; /* Adjust font-size for readability */
+    }
+  
+    .buttons {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      align-items: center;
+    }
+  
+    .linkButton, .linkButton1 {
+      width: 100%; /* Allow buttons to take full width */
+      max-width: none; /* Remove max-width restriction */
+      height: auto; /* Adjust height automatically */
+    }
+  }
+  
+  /* Margin for larger screens */
+  @media (min-width: 1421px) {
+    .content {
+      width: calc(100% - 44%);
+      margin: 0 22%;
+    }
+  }
+  
+  

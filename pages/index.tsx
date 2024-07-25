@@ -11,6 +11,7 @@ import CareXMLogo from '../components/images/carexm.svg';
 import ArthritisLogo from '../components/images/arthritis.svg';
 import BuckheadLogo from '../components/images/buckhead-life.svg';
 import GpbLogo from '../components/images/gpb.svg';
+import SbButton from '../components/SbButton';
 
 const IndexPage: React.FC = () => (
   <Layout title="SolutionBuilt">
@@ -43,7 +44,14 @@ const IndexPage: React.FC = () => (
         With 20 years in business, you can trust SolutionBuilt's web and mobile solutions to make your company–at any size–flourish through our innovative web design and software development services.
       </p>
     </div>
+    <div className={styles.homebtn2}> 
+      <SbButton href= '/'> FREE CONSULTATION </SbButton>
+
+      </div>
     <HeroAnimatedSection />
+    <div className={styles.homebtn}> 
+    <SbButton href= '/'> SEE MORE PROJECTS </SbButton>
+    </div>
     {/* New Container for SVGs */}
     <div className={styles.svgContainer}>
     <Image src={ArthritisLogo} alt="SVG Image 2" width={220} height={220} />
@@ -56,6 +64,7 @@ const IndexPage: React.FC = () => (
     <div className={styles.bottomCta}>
 <b className={styles.letsGetStarted}>Let’s Get Started</b>
 <div className={styles.ifYoureLooking}>If you’re looking for website designers or mobile app developers in the Atlanta area, contact the SolutionBuilt team today.</div>
+<SbButton href= '/'> GET A QUOTE </SbButton>
 </div>
     <Footer />
   </Layout>
