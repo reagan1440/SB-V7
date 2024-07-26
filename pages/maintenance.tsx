@@ -7,6 +7,7 @@ import styles from '../components/Maintance.module.css';
 import WebMaint from '../components/images/web-maintenance-icon.svg';
 import WebHosting from '../components/images/web-hosting-icon.svg';
 import AppMaint from '../components/images/app_maintenance.svg';
+import SbButton from "../components/SbButton";
 
 const Maintenance: NextPage = () => (
   <Layout title="SolutionBuilt">
@@ -72,6 +73,17 @@ const Maintenance: NextPage = () => (
         </div>
       </div>
     </div>
+    <div className={styles.bottomCta}>
+<b className={styles.needMaintenanceServices}>Need Maintenance Services?</b>
+<div className={styles.weRealizeThat}>We realize that not every business owner or employee knows how to update their website or mobile app. That’s why we monitor them regularly for optimal success and even clean up websites or mobile apps that we did not create. Your website needs to be properly monitored on a regularly scheduled basis to ensure its health, speed, and search visibility are kept optimized. For mobile apps we provide plans that include proactive QA testing and updates for new OS and mobile devices. At SolutionBuilt we ensure that someone on our team is always testing your software.</div>
+<div>
+<div className={styles.maintbtn}> 
+<SbButton href= '/'> GET STARTED </SbButton>
+
+</div>
+</div>
+</div>
+
   </Layout>
 );
 

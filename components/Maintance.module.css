@@ -1,4 +1,3 @@
-/* Header Section */
 .headerSection {
     display: flex;
     align-items: center;
@@ -7,13 +6,13 @@
     background: linear-gradient(78.66deg, #000d18, #00213e);
     position: relative;
     overflow: hidden;
+    padding: 0 22%;
 }
 
 .textContent {
     color: white;
     padding: 20px;
     flex: 1;
-    margin-left: 22%;
     z-index: 1;
 }
 
@@ -24,18 +23,15 @@
 
 .textContent p {
     font-size: 1.2rem;
-    margin-right: 60%;
     line-height: 2;
     letter-spacing: 1px;
     margin-top: 30px;
 }
 
 .imageWrapper {
-    position: absolute; 
-    top: 0;
-    right: 0; 
+    position: relative; 
     height: 100%;
-    width: 45%; 
+    width: 45%;
 }
 
 .imageWrapper img {
@@ -68,7 +64,9 @@
 }
 
 .ourMaintenancePlansContainer {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
     letter-spacing: 0.02em;
     display: inline-block;
@@ -114,6 +112,7 @@
     letter-spacing: 0.02em;
     font-weight: 900;
     display: inline-block;
+    color: #00213e;
 }
 
 
@@ -189,13 +188,14 @@
     opacity: 1;
 }
 
-.websiteMaintenance:hover {
-
+.hoverFloatBox:hover .websiteMaintenance, .hoverFloatBox1:hover .websiteMaintenance, .hoverFloatBox2:hover .websiteMaintenance {
     color: white;
 }
 
 .hoverBoxes {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
     height: 289px;
     font-size: 16px;
@@ -210,12 +210,160 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 100px 380px 140px;
+    padding: 100px 22% 140px;
     box-sizing: border-box;
     gap: 60px;
     text-align: left;
     font-size: 56px;
     color: #b5b5b5;
     font-family: Capitana;
-    margin-left: 8%;
+}
+
+/* Need Maintenance Section */
+.needMaintenanceServices {
+    position: relative;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+
+.weRealizeThat {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 42px;
+    display: inline-block;
+}
+
+.ringsIcon {
+    position: absolute;
+    height: 70.42%;
+    width: 27.17%;
+    top: 15.49%;
+    right: 0%;
+    bottom: 14.08%;
+    left: 72.83%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.3;
+}
+
+.linkButtonChild {
+    position: absolute;
+    height: 11.27%;
+    width: 2.72%;
+    top: 45.07%;
+    right: 12.5%;
+    bottom: 43.66%;
+    left: 84.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.linkButtonItem {
+    position: absolute;
+    height: 2.82%;
+    width: 21.74%;
+    top: 49.3%;
+    right: 13.59%;
+    bottom: 47.89%;
+    left: 64.67%;
+    background-color: #000;
+}
+
+.linkButtonInner {
+    position: absolute;
+    height: 2.82%;
+    width: 0.54%;
+    top: 64.79%;
+    right: 99.46%;
+    bottom: 32.39%;
+    left: 0%;
+    background-color: #000;
+    opacity: 0;
+}
+
+.getStarted {
+    position: absolute;
+    top: 38.03%;
+    left: 0%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.linkButton {
+    width: 184px;
+    position: relative;
+    height: 71px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.bottomCta {
+    position: relative;
+    background-color: #e8e8e8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px 22%;
+    box-sizing: border-box;
+    gap: 20px;
+    text-align: left;
+    font-size: 36px;
+    color: #33658a;
+    font-family: Capitana;
+}
+
+.maintbtn {
+    text-wrap: nowrap;
+    margin-right: 80%;
+}
+
+@media (max-width: 1024px) {
+    .headerSection {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 5%;
+    }
+
+    .textContent {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .textContent p {
+        margin-right: 0;
+    }
+
+    .imageWrapper {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .imageWrapper img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .content {
+        padding: 50px 5% 70px;
+    }
+
+    .bottomCta {
+        padding: 50px 5%;
+    }
+    
+    .hoverBoxes {
+        display: none;
+    }
 }
