@@ -40,27 +40,40 @@
     width: 100%;
 }
 
-/* Our Maintenance Plans Section */
+
 .securityUpdates, .technologyChanges, .releases, .standards {
     font-weight: 900;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .securityUpdates {
     background: linear-gradient(112.88deg, #7fc6a4, #33658a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .technologyChanges {
     background: linear-gradient(78.65deg, #00213e, #33658a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .releases {
     background: linear-gradient(78.66deg, #000d18, #00213e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .standards {
     background: linear-gradient(79.17deg, #000d18, #00213e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .ourMaintenancePlansContainer {
@@ -71,6 +84,7 @@
     letter-spacing: 0.02em;
     display: inline-block;
 }
+
 
 .bg, .bg1 {
     position: absolute;
@@ -158,20 +172,20 @@
     top: 0px;
     width: 440px;
     height: 289px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: background-color 0.3s ease, transform 0.3s ease, height 0.3s ease;
 }
 
 .hoverFloatBox {
-    left: 0px;
+    margin-left: 0px;
 }
 
 .hoverFloatBox1 {
-    left: 500px;
+    margin-left: 500px;
 }
 
 .hoverFloatBox2 {
-    left: 1000px;
+    margin-left: 1000px;
 }
 
 .hoverFloatBox:hover, .hoverFloatBox1:hover, .hoverFloatBox2:hover {
@@ -216,7 +230,7 @@
     text-align: left;
     font-size: 56px;
     color: #b5b5b5;
-    font-family: Capitana;
+
 }
 
 /* Need Maintenance Section */
@@ -362,8 +376,10 @@
     .bottomCta {
         padding: 50px 5%;
     }
-    
-    .hoverBoxes {
-        display: none;
+    .hoverFloatBox, .hoverFloatBox1, .hoverFloatBox2 {
+        top: 0px;
+        width: 440px;
+        height: 289px;
+        transition: background-color 0.3s ease, transform 0.3s ease, height 0.3s ease;
     }
 }

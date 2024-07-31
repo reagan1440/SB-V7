@@ -1,0 +1,376 @@
+.headerSection {
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: space-between;
+    height: 48vh;
+    background: linear-gradient(78.66deg, #000d18, #00213e);
+    position: relative;
+    padding-left: 22%;
+}
+
+.textContent {
+    color: white;
+    padding: 20px;
+    flex: 1;
+    z-index: 1;
+    max-width: 40%; /* Control the width of text content */
+}
+
+.textContent h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Adjust size for larger screens */
+}
+
+.textContent p {
+    font-size: 1.2rem;
+    line-height: 1.6; 
+    letter-spacing: 1px;
+    margin-bottom: 25%;
+}
+
+.integrationsHero {
+    position: relative;
+    width: 60%;
+    height: 80%; 
+}
+
+.integrationsHero img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .headerSection {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10%; /* Adjust padding for tablets */
+    }
+
+    .textContent {
+        margin-left: 0;
+        max-width: 100%; /* Ensure text uses full width on tablets */
+    }
+
+    .textContent h1 {
+        font-size: 2rem; 
+        margin-top: 15%;
+    }
+
+    .textContent p {
+        font-size: 1rem;
+        margin-bottom: 10%;
+    }
+
+    .integrationsHero {
+        width: 80%; /* Full width on tablets */
+        height: 300px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .headerSection {
+        padding: 20px 5%; /* Reduce padding for mobile */
+    }
+
+    .textContent {
+        max-width: 100%;
+    }
+
+    .textContent h1 {
+        font-size: 1.5rem;
+        margin-top: 15%;
+    }
+
+    .textContent p {
+        font-size: 0.9rem; /* Scale down for mobile */
+    }
+
+    .integrationsHero {
+        height: 150px; /* Adjust height for mobile */
+    }
+}
+
+/* under hero section */
+.cuttingEdgeWebsite {
+    font-weight: 900;
+    background: linear-gradient(107.52deg, #7fc6a4, #33658a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.results {
+    font-weight: 900;
+    background: linear-gradient(78.56deg, #00213e, #33658a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intentionalAndFunctional {
+    font-weight: 900;
+    background: linear-gradient(81.16deg, #000d18, #00213e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.aCuttingEdgeWebsiteContainer {
+    width: 1440px;
+    position: relative;
+    letter-spacing: 0.02em;
+    display: inline-block;
+}
+.content {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 22%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 56px;
+    color: #b5b5b5;
+    font-family: Capitana;
+}
+
+.APIcontent {
+    position: relative;
+    background: linear-gradient(78.66deg, #00213e, #33658a);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 100px 380px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 56px;
+    color: #b5b5b5;
+    font-family: Capitana;
+}
+
+
+.blueContainerContent {
+    color: white;
+    padding: 20px;
+    flex: 1;
+    z-index: 1;
+    max-width: 40%;
+    margin: 0 12%;
+    letter-spacing: 0.02em;
+    line-height: 60px;
+    font-family: Capitana;
+    color: #fff;
+    text-align: left;
+    align-items: center;
+    font-size: 20px;
+}
+
+.blueContainerContent h1 {
+    font-size: 1.2rem;
+    line-height: 1.6; 
+    letter-spacing: 1px;
+    margin-bottom: 0%;
+}
+
+.blueContainerContent p {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.integrationsFocusesOn {
+    margin: 0;
+    margin-left: 22%;
+}
+.integrationsFocusesOnContainer {
+    width: 670px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 38px;
+    font-family: Capitana;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+}
+
+/* so far section */
+
+.soHowDo {
+    margin: 0;
+    line-height: 38px;
+}
+.integrationsAreThe {
+    margin: 0;
+    font-size: 22px;
+    line-height: 42px;
+    color: #33658a;
+}
+.soHowDoContainer {
+    width: 1440px;
+    position: relative;
+    letter-spacing: 0.02em;
+    display: inline-block;
+}
+.soFarContent {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 22%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+    font-family: Capitana;
+}
+
+/* SB integrations section */
+.sectionBg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background: linear-gradient(78.66deg, #000d18, #00213e);
+}
+.verifyingYourUser {
+    position: absolute;
+    top: 262px;
+    left: 381px;
+    letter-spacing: 0.02em;
+    line-height: 34px;
+    display: inline-block;
+    width: 669px;
+}
+.leverageTheBenefits {
+    position: absolute;
+    top: 262px;
+    left: 1148px;
+    letter-spacing: 0.02em;
+    line-height: 34px;
+    display: inline-block;
+    width: 672px;
+}
+.programManualMarketing {
+    position: absolute;
+    top: 552px;
+    left: 381px;
+    letter-spacing: 0.02em;
+    line-height: 34px;
+    display: inline-block;
+    width: 669px;
+}
+.mergeIntoThe {
+    position: absolute;
+    top: 552px;
+    left: 1150px;
+    letter-spacing: 0.02em;
+    line-height: 34px;
+    display: inline-block;
+    width: 670px;
+}
+.authentication {
+    position: absolute;
+    top: 222px;
+    left: 381px;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+.cloudIntegrations {
+    position: absolute;
+    top: 222px;
+    left: 1148px;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+.marketingAutomation {
+    position: absolute;
+    top: 512px;
+    left: 381px;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+.analytics {
+    position: absolute;
+    top: 512px;
+    left: 1150px;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+.solutionbuiltTypicalIntegrat {
+    position: absolute;
+    top: 13.04%;
+    left: 17.27%;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 30px;
+}
+.integrations {
+    width: 100%;
+    position: relative;
+    height: 836px;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: Capitana;
+}
+
+/* get started */
+
+.letsGetStarted {
+    position: relative;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+.ifYoureLooking {
+    width: 1440px;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.workWithUs {
+    position: absolute;
+    top: 38.03%;
+    left: 0%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.linkButton {
+    width: 201px;
+    position: relative;
+    height: 71px;
+    text-align: right;
+    font-size: 12px;
+}
+.bottomCta {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px 380px;
+    box-sizing: border-box;
+    gap: 20px;
+    text-align: left;
+    font-size: 36px;
+    color: #33658a;
+    font-family: Capitana;
+}
+
+.integrationsGetStartedBtn {
+    margin-left: 0%;
+    margin-bottom: 2%;
+}

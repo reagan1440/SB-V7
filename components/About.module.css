@@ -179,7 +179,7 @@
     }
   }
   
-  /* Margin for larger screens */
+
   @media (min-width: 1421px) {
     .content {
       width: calc(100% - 44%);
@@ -187,4 +187,10 @@
     }
   }
   
+  .aboutbtn {
+    padding-left: 0%;
+    padding-top: 2%;
+    text-wrap: nowrap;
+
+  }
   

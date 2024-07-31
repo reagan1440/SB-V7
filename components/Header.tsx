@@ -17,7 +17,8 @@ const Header: React.FC = () => {
     let lastScrollTop = 0;
     const handleScroll = () => {
       const currentScrollTop = window.scrollY;
-      if (currentScrollTop > lastScrollTop) {
+      console.log(`Scroll Top: ${currentScrollTop}, Last Scroll Top: ${lastScrollTop}`);
+      if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -33,7 +34,9 @@ const Header: React.FC = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.logoContainer}>
-        <Image src={logo} alt="Logo" width={300} height={120} />
+        <Link href="/">
+          <Image src={logo} alt="Logo" width={300} height={120} />
+        </Link>
       </div>
       <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
         <Link href="/mobile-apps">Mobile Apps</Link>

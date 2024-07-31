@@ -36,22 +36,22 @@ const Footer: NextPage = () => {
                         <p>JOIN THE SOLUTIONBUILT TEAM!</p>
                     </div>
                     <div className={styles.socialIcons}>
-                        <a href="https://youtube.com" aria-label="YouTube">
+                        <a href="https://www.youtube.com/user/solutionbuilt" aria-label="YouTube">
                             <Image src={YoutubeIcon} alt="YouTube" width={25} height={22} />
                         </a>
-                        <a href="https://facebook.com" aria-label="Facebook">
+                        <a href="https://www.facebook.com/SolutionBuilt/" aria-label="Facebook">
                             <Image src={FacebookIcon} alt="Facebook" width={13} height={22} />
                         </a>
-                        <a href="https://instagram.com" aria-label="Instagram">
+                        <a href="https://www.instagram.com/solutionbuilt/" aria-label="Instagram">
                             <Image src={InstagramIcon} alt="Instagram" width={20} height={22} />
                         </a>
-                        <a href="https://twitter.com" aria-label="Twitter">
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2FSolutionBuilt" aria-label="Twitter">
                             <Image src={TwitterIcon} alt="Twitter" width={22} height={22} />
                         </a>
-                        <a href="https://yelp.com" aria-label="Yelp">
+                        <a href="https://www.yelp.com/biz/solutionbuilt-marietta-3" aria-label="Yelp">
                             <Image src={YelpIcon} alt="Yelp" width={16} height={22} />
                         </a>
-                        <a href="https://rss.com" aria-label="RSS">
+                        <a href="https://www.solutionbuilt.com/blog/" aria-label="Blog">
                             <Image src={RssIcon} alt="RSS" width={19} height={22} />
                         </a>
                     </div>

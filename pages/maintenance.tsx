@@ -8,6 +8,7 @@ import WebMaint from '../components/images/web-maintenance-icon.svg';
 import WebHosting from '../components/images/web-hosting-icon.svg';
 import AppMaint from '../components/images/app_maintenance.svg';
 import SbButton from "../components/SbButton";
+import Footer from "../components/Footer";
 
 const Maintenance: NextPage = () => (
   <Layout title="SolutionBuilt">
@@ -83,7 +84,7 @@ const Maintenance: NextPage = () => (
 </div>
 </div>
 </div>
-
+<Footer />
   </Layout>
 );
 

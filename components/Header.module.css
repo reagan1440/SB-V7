@@ -11,10 +11,12 @@
   z-index: 1000;
   box-sizing: border-box;
   transition: top 0.3s ease-in-out;
+  position: fixed;
+
 }
 
-.scrolled {
-  top: -100px;
+.header.scrolled {
+  top: -100px; 
 }
 
 .logoContainer {
