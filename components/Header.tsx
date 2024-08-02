@@ -7,32 +7,35 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState<number>(0);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
-    let lastScrollTop = 0;
     const handleScroll = () => {
       const currentScrollTop = window.scrollY;
-      console.log(`Scroll Top: ${currentScrollTop}, Last Scroll Top: ${lastScrollTop}`);
+
+      // Hide header if scrolling down, show if scrolling up
       if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+        setIsHeaderVisible(false); // Scrolling down
+      } else if (currentScrollTop < lastScrollTop) {
+        setIsHeaderVisible(true); // Scrolling up
       }
-      lastScrollTop = currentScrollTop;
+
+      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [lastScrollTop]);
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
+    <header className={`${styles.header} ${!isHeaderVisible ? styles.hidden : ''}`}>
       <div className={styles.logoContainer}>
         <Link href="/">
           <Image src={logo} alt="Logo" width={300} height={120} />

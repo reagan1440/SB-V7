@@ -11,6 +11,7 @@ import DeviceManagement from '../components/images/device_management.svg';
 import Analytics from '../components/images/analytics.svg';
 import Integrations from '../components/images/integrations.svg';
 import Diagnostics from '../components/images/diagnostics.svg';
+import SupportApp from '../components/images/shape.svg';
 
 const Support: NextPage = () => {
   const onFrameContainerClick = useCallback(() => {
@@ -52,7 +53,7 @@ const Support: NextPage = () => {
           <Image
             className={styles.appMaintenanceIcon}
             alt="App Maintenance"
-            src={AppMaintenance}
+            src={SupportApp}
             width={80}
             height={80}
           />

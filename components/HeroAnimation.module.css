@@ -1,0 +1,54 @@
+.heroAnimatedSection {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: background 0.5s ease;
+  }
+  
+  /* Media queries for heroAnimatedSection */
+  @media (max-width: 1700px) {
+    .heroAnimatedSection {
+      /* Adjust styles for smaller screens */
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .heroAnimatedSection {
+      /* Further adjustments */
+    }
+  }
+  
+  /* PageLayout media queries */
+  .pageLayout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 600px;
+    gap: 20px;
+    margin: 0 22%;
+  }
+  
+  @media (max-width: 1700px) {
+    .pageLayout {
+      margin: 0 5%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .pageLayout {
+      /* Further margin adjustments if needed */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pageLayout {
+      margin: 0 5%;
+    }
+  }
+  
+@media  (max-width: 1000px) {
+    .pageLayout {
+        display: none;
+    }    
+}
+

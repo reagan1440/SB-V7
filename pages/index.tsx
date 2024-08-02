@@ -29,7 +29,7 @@ const IndexPage: React.FC = () => (
     </div>
     <div className={styles.content}>
       <h2 className={styles.largeHeader}>
-        Celebrating 20 years as Atlanta's
+        Celebrating 20 years as Atlanta's five &nbsp;
         <span className={styles.greenText}>
           leading website design & app development agency.
         </span>
@@ -64,7 +64,9 @@ const IndexPage: React.FC = () => (
     <div className={styles.bottomCta}>
 <b className={styles.letsGetStarted}>Let’s Get Started</b>
 <div className={styles.ifYoureLooking}>If you’re looking for website designers or mobile app developers in the Atlanta area, contact the SolutionBuilt team today.</div>
+<div className={styles.homebtn3}>
 <SbButton href= '/'> GET A QUOTE </SbButton>
+</div>
 </div>
     <Footer />
   </Layout>
