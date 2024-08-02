@@ -326,52 +326,93 @@ export const FourthContainer = () => {
   );
 };
 
-const PageLayout = () => {
+// New responsive containers
+const ResponsiveContainers = () => {
   return (
-    <div className={styles.pageLayout}>
-      <div className="layout-hero" style={{
-        gridColumn: '1 / 3',
-        gridRow: '1 / 2',
-        backgroundColor: '#ddd',
-        position: 'relative',
-        height: '350px',
-      }}>
-        <HeroAnimatedSection />
+    <div className={styles.responsiveContainers}>
+      <div className={styles.responsiveContainer}>
+        <Image
+          src={skinbonesLaptop}
+          alt="Main Image"
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
-      <div className="layout-second" style={{
-        gridColumn: '3 / 5',
-        gridRow: '1 / 3',
-        backgroundColor: '#ddd',
-        position: 'relative',
-        height: '600px',
-      }}>
-        <SecondContainer />
+      <div className={styles.responsiveContainer}>
+        <Image
+          src={aaaProjectComp}
+          alt="Main Image"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
-      <div className="layout-third" style={{
-        gridColumn: '1 / 3',
-        gridRow: '2 / 3',
-        backgroundColor: '#ddd',
-        position: 'relative',
-        height: '600px',
-      }}>
-        <ThirdContainer />
+      <div className={styles.responsiveContainer}>
+        <Image
+          src={ethosPhoneA}
+          alt="Main Image"
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
-      <div className="layout-fourth" style={{
-        gridColumn: '3 / 5',
-        gridRow: '2 / 3',
-        backgroundColor: '#ddd',
-        position: 'relative',
-        height: '350px',
-        marginTop: '250px',
-      }}>
-        <FourthContainer />
+      <div className={styles.responsiveContainer}>
+        <Image
+          src={utilityLaptopComp}
+          alt="Main Image"
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
     </div>
   );
 };
 
+const PageLayout = () => {
+  return (
+    <div>
+      <div className={styles.pageLayout}>
+        <div className="layout-hero" style={{
+          gridColumn: '1 / 3',
+          gridRow: '1 / 2',
+          backgroundColor: '#ddd',
+          position: 'relative',
+          height: '350px',
+        }}>
+          <HeroAnimatedSection />
+        </div>
+        <div className="layout-second" style={{
+          gridColumn: '3 / 5',
+          gridRow: '1 / 3',
+          backgroundColor: '#ddd',
+          position: 'relative',
+          height: '600px',
+        }}>
+          <SecondContainer />
+        </div>
+        <div className="layout-third" style={{
+          gridColumn: '1 / 3',
+          gridRow: '2 / 3',
+          backgroundColor: '#ddd',
+          position: 'relative',
+          height: '600px',
+        }}>
+          <ThirdContainer />
+        </div>
+        <div className="layout-fourth" style={{
+          gridColumn: '3 / 5',
+          gridRow: '2 / 3',
+          backgroundColor: '#ddd',
+          position: 'relative',
+          height: '350px',
+          marginTop: '250px',
+        }}>
+          <FourthContainer />
+        </div>
+      </div>
+      <ResponsiveContainers />
+    </div>
+  );
+};
 
-//mobile and smaller screen size container
 
 
 export default PageLayout;
