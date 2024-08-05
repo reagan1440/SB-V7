@@ -42,7 +42,6 @@ const Header: React.FC = () => {
         </Link>
       </div>
       <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
-        <Link href="/mobile-apps">Mobile Apps</Link>
         <Link href="/websites">Websites</Link>
         <Link href="/maintenance">Maintenance</Link>
         <Link href="/integrations">Integrations</Link>

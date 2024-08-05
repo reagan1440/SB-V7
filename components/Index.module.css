@@ -149,12 +149,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5%;
   box-sizing: border-box;
   text-align: left;
   color: #33658a;
   font-family: Capitana;
-  margin: 0 17%;
+  margin: 0 12%;
 }
 
 .letsGetStarted {
@@ -192,7 +191,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 110px;
+  gap: 90px;
 }
 
 .icons > div {
@@ -217,9 +216,12 @@
 
 /* Responsive Styles */
 @media (max-width: 1700px) {
-  .content, .support {
+  .content {
     margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 5%;
+  }
+  .support {
+    margin-right: 10%;
   }
 
   .largeHeader {
@@ -247,7 +249,7 @@
   }
 
   .icons {
-    gap: 80px;
+    gap: 70px;
   }
 
   .icons img {
@@ -265,7 +267,7 @@
   }
 
   .bottomCta {
-    padding: 5% 10%;
+    margin-left: 10%;
   }
 
   .letsGetStarted {
@@ -275,6 +277,19 @@
   .ifYoureLooking {
     font-size: 1.1rem;
   }
+  .homebtn2 {
+    margin-bottom: 5%;
+    margin-left: -11%;
+  }
+  .homebtn {
+    margin-bottom: 5%;
+    margin-left: -11%;
+  }
+  .homebtn3 {
+    margin-bottom: 5%;
+    margin-left: -2%;
+  }
+
 }
 
 @media (max-width: 1324px) {
@@ -341,7 +356,6 @@
 @media (max-width: 1024px) {
   .content, .support {
     margin-right: 2%;
-    margin-left: 2%;
   }
 
   .largeHeader {

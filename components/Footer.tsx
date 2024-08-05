@@ -19,7 +19,6 @@ const Footer: NextPage = () => {
                         <Image src={FooterLogo} alt="SolutionBuilt Logo" width={220} height={120} />
                     </div>
                     <nav className={styles.nav}>
-                        <a href="/mobile-apps">Mobile Apps</a>
                         <a href="/websites">Websites</a>
                         <a href="/maintenance">Maintenance</a>
                         <a href="/integrations">Integrations</a>

@@ -23,6 +23,12 @@
     padding-left: 22%;
     position: relative;
   }
+
+  @media (max-width: 1700px) {
+    .contentContainer {
+      padding-left: 10%;
+    }
+  }
   
   .tabs {
     font-family: inherit;

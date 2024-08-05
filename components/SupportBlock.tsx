@@ -6,7 +6,6 @@ import styles from '../components/Index.module.css';
 
 import SiteMaintenance from '../components/images/site_maintenance.svg';
 import SiteHosting from '../components/images/site_hosting.svg';
-import AppMaintenance from '../components/images/app_maintenance.svg';
 import DeviceManagement from '../components/images/device_management.svg';
 import Analytics from '../components/images/analytics.svg';
 import Integrations from '../components/images/integrations.svg';
@@ -28,7 +27,6 @@ const Support: NextPage = () => {
         We provide maintenance services and plans, including proactive QA testing and updates for new OS and mobile devices to help your website and mobile app continue to improve and grow. Do you need web hosting? We provide cloud-based hosting plans for our customers to provide one resource for all of your web and mobile hosting needs.
       </div>
       <div className={styles.icons}>
-        {/* Use Next.js Image component for SVGs */}
         <div className={styles.siteMaintenanceParent} onClick={onFrameContainerClick}>
           <Image
             className={styles.siteMaintenanceIcon}
