@@ -1,93 +1,186 @@
-/* Contact.module.css */
+.pageHeader {
+  background: linear-gradient(78.66deg, #000d18, #00213e);
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: 30vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.pageHeader h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 22%;
+}
+
+.pageHeader p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  margin-left: 22%;
+  margin-bottom: 5%;
+}
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  padding: 40px 10px;
+  max-width: 1600px;
+  margin: -5% auto;
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Ensure containers stack vertically */
+  gap: 0; /* Remove gap between containers */
+}
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0; /* Remove gap between contact cards */
+  margin-bottom: 0; /* Remove margin to avoid extra space */
+  padding: 0;
+}
+
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Align items to the top */
+  background-color: #f1f1f1;
+  padding: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  height: 220px;
+  text-align: left; /* Ensure text aligns left */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contactCard:hover {
+  background: linear-gradient(78.66deg, #000d18, #00213e);
+  color: #fff;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+}
+
+.contactDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; /* Align text to the left */
+  height: 100%;
+}
+
+.contactDetail h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.contactDetail p {
+  margin: 0;
+  font-size: 1.3rem;
+  margin-top: 15px; 
+  text-align: left;
+  line-height: 1.5;
+}
+
+.form {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 40px; /* Space from contact info */
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Two equal columns */
+  gap: 20px; /* Space between columns */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.mcFieldGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.mcFieldGroup label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.mcFieldGroup input,
+.mcFieldGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: none; /* Remove border */
+  border-bottom: 2px solid #333; /* Add 2px underline */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.mcFieldGroup textarea {
+  min-height: 100px;
+}
+
+.mcFieldGroup input:focus,
+.mcFieldGroup textarea:focus {
+  border-bottom: 2px solid #000d18; /* Change underline color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.asterisk {
+  color: #00213e;
+}
+
+.contactBtn {
+  background: #932121;
+  border: 1px solid #333; /* Darker border color */
+  border-radius: 0; /* Remove rounded corners */
+  margin-bottom: 100px;
+}
+
+
+.responses {
+  margin: 10px 0;
+  display: none;
+}
+
+.response {
+  font-size: 0.9rem;
+  color: #00213e;
+}
+
+.optionalParent {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 1700px) {
+  .pageHeader h2 {
+    margin-left: 5%;
   }
   
-  .heading {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
+  .pageHeader p {
+    margin-left: 5%;
+    margin-bottom: 5%;
   }
-  
-  .subheading {
-    text-align: center;
-    margin-bottom: 40px;
+  .pageHeader {
+    height: 40vh;
   }
-  
-  .contactDetails {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 40px;
+  .container {
+    max-width: 1400px !important;
   }
-  
-  .detailItem {
-    text-align: center;
-  }
-  
-  .detailItem h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .formContainer {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .formGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  .formGroup {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .label {
-    font-size: 0.9em;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-  
-  .input, .select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  .button {
-    background: #0052cc;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .button:hover {
-    background: #003d99;
-  }
-  
-  .asterisk {
-    color: red;
-  }
-  
-  .submitContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
+}
