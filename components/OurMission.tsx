@@ -41,7 +41,7 @@ const OurMission: NextPage = () => {
             <p className={styles.statLabel}>Satisfied Clients</p>
           </div>
           <div className={styles.statItem}>
-            {inView && <CountUp className={styles.statNumber} end={19} duration={3} />}
+            {inView && <CountUp className={styles.statNumber} end={20} duration={3} />}
             <p className={styles.statLabel}>Years in Business</p>
           </div>
           <div className={styles.statItem}>

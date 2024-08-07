@@ -37,7 +37,7 @@ const Integrations: NextPage = () => (
     <div className={styles.APIcontent}>
       <div className={styles.blueContainerContent}>
         <h1>Application Programming Interfaces (API’s)</h1>
-        <p>API’s allow a connection between two or more apps for exchanging data.</p>
+        <p>API's allow a connection between two or more apps for exchanging data.</p>
       </div>
       <div className={styles.integrationsFocusesOnContainer}>
         <p className={styles.integrationsFocusesOn}>Integrations focuses on integrity. APIs ensure that you will not have to worry about versioning issues coming between your massive stack of systems.</p>
@@ -46,14 +46,14 @@ const Integrations: NextPage = () => (
       </div>
     </div>
     <div className={styles.soFarContent}>
-<div className={styles.soHowDoContainer}>
-<p className={styles.soHowDo}>So how do you apply features that not only lead to a positive user journey, but enable your business to become streamlined and competent as a whole?</p>
-<p className={styles.soHowDo}>&nbsp;</p>
-<p className={styles.integrationsAreThe}>Integrations are the key.</p>
-<p className={styles.soHowDo}>&nbsp;</p>
-<p className={styles.soHowDo}>At SolutionBuilt, we add integrations to your website to optimize both the experience for your company and your users. We integrate API’s and Cloud Services into available software, websites, and mobile apps.</p>
+  <p className={styles.soHowDo}>
+    So how do you apply features that not only lead to a positive user journey, but enable your business to become streamlined and competent as a whole? 
+    <span className={styles.highlight}>&nbsp;Integrations are the key.&nbsp;</span>
+    At SolutionBuilt, we add integrations to your website to optimize both the experience for your company and your users. We integrate API’s and Cloud Services into available software, websites, and mobile apps.
+  </p>
 </div>
-</div>
+
+
 <div className={styles.integrations}>
 <div className={styles.sectionBg} />
 <div className={styles.verifyingYourUser}>Verifying your user identities just got easier. Through a combination of common SOO technology authentication, we can help with setting up role-based access for your employees, partners, and customers. We partner with many providers such as Microsoft Azure Active Directory, Okta Identity Cloud, Google Cloud Identity, OneLogin, JumpCloud, and Auth0.</div>
@@ -67,11 +67,11 @@ const Integrations: NextPage = () => (
 <b className={styles.solutionbuiltTypicalIntegrat}>SolutionBuilt Typical Integrations</b>
 </div>
 <div className={styles.bottomCta}>
-<b className={styles.letsGetStarted}>Let’s Get Started</b>
-<div className={styles.ifYoureLooking}>If you’re looking for website designers or mobile app developers in the Atlanta area, contact the SolutionBuilt team today.</div>
+<b className={styles.letsGetStarted}>Need Integration Services?</b>
+<div className={styles.ifYoureLooking}>If you're still looking for Integration, you've found it here! Whether you are looking to develop customer facing interfaces or streamline your data-flow processes, we've got your back. At SolutionBuilt we are passionate about making life easier for our clients through problem solving API integration and custom programming. Spend less time worrying about your applications and more time invested in the growth of your business today!</div>
 </div>
-<div className={styles.integrationsGetStartedBtn}>
-<SbButton href='/'>COMPANY HISTORY</SbButton> 
+<div className={styles.integrationsBtn}>
+<SbButton href='/'>WORK WITH US</SbButton> 
 
 </div>
 < Footer />

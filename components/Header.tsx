@@ -46,7 +46,7 @@ const Header: React.FC = () => {
         <Link href="/maintenance">Maintenance</Link>
         <Link href="/integrations">Integrations</Link>
         <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/contact" className={styles.contact}>Contact</Link>
       </nav>
       <div className={styles.hamburger} onClick={toggleMenu}>
         {isMenuOpen ? (

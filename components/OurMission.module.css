@@ -1,178 +1,179 @@
+.ourMission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  height: 40vh;
+}
+
+.leftSection {
+  flex: 0 0 70%; 
+  position: relative;
+  height: 100%;
+}
+
+.rightSection {
+  flex: 0 0 30%; 
+  position: relative;
+  height: 100%;
+}
+
+.leftSectionBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(118deg, #33658a, #7fc6a4 45%, #000d18 0, #00213e 0);
+  z-index: -1;
+}
+
+.rightSectionBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00213e;
+  z-index: -1;
+}
+
+.spinningLogoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
 .spinningLogoContainer {
-    position: relative;
-    width: 30vh;
-    height: 30vh;
-    margin-right: 22%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: transparent;
+  position: relative;
+  width: 30vh;
+  height: 30vh;
+  margin-right: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.outerCircle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: spinLeft 10s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middleCircle {
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  animation: spinRight 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerCircle {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  animation: spinLeft 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outerImage,
+.middleImage,
+.innerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes spinLeft {
+  0% {
+    transform: rotate(0);
   }
-  
-  .outerCircle {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    animation: spinLeft 10s linear infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  100% {
+    transform: rotate(-360deg);
   }
-  
-  .middleCircle {
-    position: absolute;
-    width: 75%;
-    height: 75%;
-    animation: spinRight 5s linear infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@keyframes spinRight {
+  0% {
+    transform: rotate(0);
   }
-  
-  .innerCircle {
-    position: absolute;
-    width: 60%;
-    height: 60%;
-    animation: spinLeft 5s linear infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .outerImage,
-  .middleImage,
-  .innerImage {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  @keyframes spinLeft {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
-  
-  @keyframes spinRight {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .ourMission {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-    height: 40vh;
-  }
-  
-  .leftSection {
-    flex: 0 0 70%; 
-    position: relative;
-    height: 100%;
-  }
-  
-  .rightSection {
-    flex: 0 0 30%; 
-    position: relative;
-    height: 100%;
-  }
-  
-  .leftSectionBg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(118deg, #33658a, #7fc6a4 45%, #000d18 0, #00213e 0);
-    z-index: -1;
-  }
-  
-  .rightSectionBg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00213e;
-    z-index: -1;
-  }
-  
-  
-  .spinningLogoWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .toProvideTransparencyContainer {
-    margin-top: 20px;
-    padding: 20px;
-    color: white;
-    font-size: 20px; 
-  }
-  
-  .toProvideTransparency, .toCreateMarketing {
-    margin: 25px 0; 
-  }
-  
+}
+
+.toProvideTransparencyContainer {
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 20px; 
+}
+
+.toProvideTransparency, .toCreateMarketing {
+  margin: 25px 0; 
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px; 
+  flex-wrap: wrap; 
+}
+
+.statItem {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.statLabel {
+  font-weight: bold;
+  color: white;
+  margin-top: 10px; 
+}
+
+.statNumber {
+  font-size: 56px;
+  background: linear-gradient(113.49deg, #7fc6a4, #33658a);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10px; 
+}
+
+@media (max-width: 768px) {
   .stats {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px; 
-    flex-wrap: wrap; 
+    flex-direction: column;
   }
-  
+
   .statItem {
-    text-align: center;
     margin-bottom: 20px;
   }
-  
-  .statLabel {
-    font-weight: bold;
-    color: white;
-    margin-top: 10px; 
+
+  .leftSection, .rightSection {
+    flex: 1 1 100%;
   }
-  
-  .statNumber {
-    font-size: 56px;
-    color: #33658a; 
-    margin-bottom: 10px; 
+
+  .leftSectionBg, .rightSectionBg {
+    width: 100%;
+    height: 50%;
   }
-  
-  @media (max-width: 768px) {
-    .stats {
-      flex-direction: column;
-    }
-  
-    .statItem {
-      margin-bottom: 20px;
-    }
-  
-    .leftSection, .rightSection {
-      flex: 1 1 100%;
-    }
-  
-    .leftSectionBg, .rightSectionBg {
-      width: 100%;
-      height: 50%;
-    }
-  
-    .rightSectionBg {
-      top: 50%;
-    }
+
+  .rightSectionBg {
+    top: 50%;
   }
-  
+}

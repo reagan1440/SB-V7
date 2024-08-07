@@ -128,20 +128,21 @@
     margin-bottom: 3%;
     box-sizing: border-box;
     text-align: left;
-    font-size: 56px;
     color: #b5b5b5;
-    font-family: Capitana;
+    font-family: Capitana !important;
+    font-size: 4rem;
+    font-weight: 900;
+
 }
 
 .APIcontent {
-    position: relative;
     background: linear-gradient(78.66deg, #00213e, #33658a);
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 100px 380px;
+    /* padding: 100px 400px; */
     box-sizing: border-box;
     text-align: left;
     font-size: 56px;
@@ -153,17 +154,19 @@
 .blueContainerContent {
     color: white;
     padding: 20px;
-    flex: 1;
     z-index: 1;
     max-width: 40%;
-    margin: 0 12%;
+    margin-left: 22%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     letter-spacing: 0.02em;
     line-height: 60px;
     font-family: Capitana;
     color: #fff;
     text-align: left;
     align-items: center;
-    font-size: 20px;
+    font-size: 45px;
+    font-weight: 900;
 }
 
 .blueContainerContent h1 {
@@ -183,7 +186,7 @@
     margin-left: 22%;
 }
 .integrationsFocusesOnContainer {
-    width: 670px;
+    width: 900px;
     position: relative;
     font-size: 20px;
     letter-spacing: 0.02em;
@@ -192,47 +195,50 @@
     color: #fff;
     text-align: left;
     display: inline-block;
+    margin-right: 22%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: 400;
 }
 
 /* so far section */
 
-.soHowDo {
-    margin: 0;
-    line-height: 38px;
-}
-.integrationsAreThe {
-    margin: 0;
-    font-size: 22px;
-    line-height: 42px;
-    color: #33658a;
-}
-.soHowDoContainer {
-    width: 1440px;
-    position: relative;
-    letter-spacing: 0.02em;
-    display: inline-block;
-}
 .soFarContent {
-    position: relative;
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 0 22%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    width: 56%; /* Default width to maintain 22% margin on larger screens */
+    margin: 3% 22%;
     box-sizing: border-box;
-    text-align: left;
-    font-size: 18px;
-    color: #000;
+    font-family: Capitana;
+    font-weight: 500;
+}
+
+.soHowDo {
+    font-size: 1.3rem;
+    color: #000; /* Text color */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+.highlight {
+    font-size: 1.3rem; 
+    color: #33658a; 
     font-family: Capitana;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1700px) {
+    .soFarContent {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .soFarContent {
+        font-size: 0.9rem; /* Further scale down text for mobile */
+    }
+}
+
+
 /* SB integrations section */
 .sectionBg {
-    position: absolute;
     height: 100%;
     width: 100%;
     top: 0%;
@@ -244,74 +250,75 @@
 .verifyingYourUser {
     position: absolute;
     top: 262px;
-    left: 381px;
-    letter-spacing: 0.02em;
-    line-height: 34px;
+    letter-spacing: 1px;
+    line-height: 2;
     display: inline-block;
     width: 669px;
+    margin: 0 22%;
 }
 .leverageTheBenefits {
     position: absolute;
     top: 262px;
-    left: 1148px;
-    letter-spacing: 0.02em;
-    line-height: 34px;
+    left: 1248px;
+    letter-spacing: 1px;
+    line-height: 2;
     display: inline-block;
     width: 672px;
 }
 .programManualMarketing {
     position: absolute;
     top: 552px;
-    left: 381px;
-    letter-spacing: 0.02em;
-    line-height: 34px;
+    letter-spacing: 1px;
+    line-height: 2;
     display: inline-block;
     width: 669px;
+    margin: 0 22%;
 }
 .mergeIntoThe {
     position: absolute;
     top: 552px;
-    left: 1150px;
-    letter-spacing: 0.02em;
-    line-height: 34px;
+    left: 1250px;
+    letter-spacing: 1px;
+    line-height: 2;
     display: inline-block;
     width: 670px;
 }
 .authentication {
     position: absolute;
     top: 222px;
-    left: 381px;
     font-size: 20px;
     letter-spacing: 0.02em;
+    margin: 0 22%;
 }
 .cloudIntegrations {
     position: absolute;
     top: 222px;
-    left: 1148px;
+    left: 1248px;
     font-size: 20px;
     letter-spacing: 0.02em;
 }
 .marketingAutomation {
     position: absolute;
     top: 512px;
-    left: 381px;
     font-size: 20px;
     letter-spacing: 0.02em;
+    margin: 0 22%;
+
 }
 .analytics {
     position: absolute;
     top: 512px;
-    left: 1150px;
+    left: 1250px;
     font-size: 20px;
     letter-spacing: 0.02em;
 }
 .solutionbuiltTypicalIntegrat {
     position: absolute;
     top: 13.04%;
-    left: 17.27%;
     font-size: 40px;
     letter-spacing: 0.02em;
     line-height: 30px;
+    margin: 0 22%;
 }
 .integrations {
     width: 100%;
@@ -329,10 +336,9 @@
     position: relative;
     letter-spacing: 0.02em;
     color: #000;
+    font-weight: 600;
 }
 .ifYoureLooking {
-    width: 1440px;
-    position: relative;
     font-size: 22px;
     letter-spacing: 0.02em;
     line-height: 30px;
@@ -356,21 +362,106 @@
 .bottomCta {
     position: relative;
     background-color: #fff;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 100px 380px;
     box-sizing: border-box;
     gap: 20px;
     text-align: left;
     font-size: 36px;
     color: #33658a;
     font-family: Capitana;
+    margin: 3% 22%;
 }
 
-.integrationsGetStartedBtn {
-    margin-left: 0%;
+.integrationsBtn {
+    margin-left: 8.5%;
     margin-bottom: 2%;
+}
+
+
+/*  media screen  */
+
+/* Mobile Styles */
+
+/* Base Styles for Mobile Screens */
+@media (max-width: 1700px) {
+    .headerSection {
+        flex-direction: column;
+        padding: 20px 5%; /* Reduce padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .textContent {
+        max-width: 100%; /* Ensure text uses full width */
+        margin: 0; /* Remove margins */
+    }
+
+    .textContent h1 {
+        font-size: 2rem; /* Adjust size for readability */
+        margin-top: 15%;
+    }
+
+    .textContent p {
+        font-size: 1rem; /* Adjust font size */
+        margin-bottom: 10%; /* Adjust margin */
+    }
+
+    .integrationsHero {
+        width: 80%; /* Adjust width for smaller screens */
+        height: 300px; /* Adjust height */
+    }
+
+    .content {
+        margin: 0 5%; /* Reduce margins */
+        font-size: 2rem; /* Adjust font size */
+        line-height: 1.4; /* Adjust line height */
+    }
+
+    .APIcontent {
+        font-size: 36px; /* Adjust font size */
+    }
+
+    .blueContainerContent {
+        font-size: 1.5rem; /* Adjust font size */
+        line-height: 1.5; /* Adjust line height */
+    }
+
+    .blueContainerContent h1 {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .blueContainerContent p {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .integrationsFocusesOnContainer {
+        font-size: 16px; /* Adjust font size */
+        margin: 0 5%; /* Reduce margins */
+    }
+
+    .soFarContent {
+        width: 90%; /* Adjust width */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .verifyingYourUser,
+    .leverageTheBenefits,
+    .programManualMarketing,
+    .mergeIntoThe,
+    .authentication,
+    .cloudIntegrations,
+    .marketingAutomation,
+    .analytics,
+    .solutionbuiltTypicalIntegrat {
+        width: 100%; /* Full width */
+        font-size: 16px; /* Adjust font size */
+        margin: 0 5%; /* Reduce margins */
+    }
+
+    .bottomCta {
+        font-size: 24px; /* Adjust font size */
+        margin: 3% 5%; /* Reduce margins */
+    }
 }

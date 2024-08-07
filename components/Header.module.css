@@ -16,7 +16,7 @@
 .hidden {
   opacity: 0;
   transform: translateY(-100%);
-  pointer-events: none; /* Prevent interactions when hidden */
+  pointer-events: none;
 }
 
 .logoContainer {
@@ -26,14 +26,14 @@
 }
 
 .logoContainer img {
-  height: 60px;
+  height: 55px;
   width: auto;
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  column-gap: 3rem;
   list-style: none;
   padding: 10px;
 }
@@ -41,10 +41,12 @@
 .nav a {
   color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   position: relative;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .nav a::after {
@@ -53,8 +55,8 @@
   left: 0;
   bottom: -2px;
   width: 100%;
-  height: 2px;
-  background-color: #FFD700;
+  height: 3px;
+  background-color: #33658A;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
@@ -64,6 +66,41 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.nav a.contact {
+  position: relative;
+  color: black;
+  background-color: white;
+  padding: 3px 20px; 
+  border: 2px solid transparent;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: -3.5px;
+}
+
+.nav a.contact::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 1px solid #fff;
+  z-index: -1;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.nav a.contact:hover {
+  background: linear-gradient(113.49deg, #7fc6a4, #33658a);
+  color: #fff;
+  border-color: white;
+}
+
+.nav a.contact::after {
+  content: none;
+}
+
 
 .hamburger {
   display: none;

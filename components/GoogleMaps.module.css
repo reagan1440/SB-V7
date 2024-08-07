@@ -1,0 +1,17 @@
+.google-map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0px !important;
+  }
+  
+  .i4ewOd-pzNkMb-haAclf {
+    display: none !important;
+  }
+  
+  .google-map-container .i4ewOd-pzNkMb-haAclf {
+    display: none !important;
+  }
+  
+  iframe{
+    border-width: 0px;
+}

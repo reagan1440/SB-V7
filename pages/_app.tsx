@@ -1,7 +1,10 @@
+// pages/_app.tsx
 import { AppProps } from 'next/app';
-import '../styles/global.css'
-
+import '../styles/global.css';
 import Head from 'next/head';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
