@@ -381,11 +381,6 @@
 }
 
 
-/*  media screen  */
-
-/* Mobile Styles */
-
-/* Base Styles for Mobile Screens */
 @media (max-width: 1700px) {
     .headerSection {
         flex-direction: column;
