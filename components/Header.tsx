@@ -18,14 +18,15 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       const currentScrollTop = window.scrollY;
 
-      // Hide header if scrolling down, show if scrolling up
       if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
-        setIsHeaderVisible(false); // Scrolling down
+        // Scrolling down
+        setIsHeaderVisible(false);
       } else if (currentScrollTop < lastScrollTop) {
-        setIsHeaderVisible(true); // Scrolling up
+        // Scrolling up
+        setIsHeaderVisible(true);
       }
 
-      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+      setLastScrollTop(currentScrollTop);
     };
 
     window.addEventListener('scroll', handleScroll);

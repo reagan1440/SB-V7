@@ -1,121 +1,150 @@
 .team {
-    width: 100%;
-    background-color: #e8e8e8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 5%;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 2rem;
-    color: #00213e;
-    font-family: Capitana;
-  }
-  
-  .ourTeam {
-    letter-spacing: 0.02em;
-    line-height: 1.5;
-    margin-right: 52%;
-  }
-  
-  .teamMembersParent {
-    width: 100%;
-    position: relative;
-  }
-  
-  .teamMembers {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .teamMember {
-    position: relative;
-    width: 228px;
-    height: 321px;
-    margin: 0;
-  }
-  
-  .teamMember img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .nameContainer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(271deg, transparent, rgba(0, 33, 62, .5) -1px, rgba(51, 101, 138, .6) 1px);
-    color: white;
-    text-align: center;
-    padding: 5px 0;
-  }
-  
-  .join {
-    position: relative;
-    width: 228px;
-    height: 321px;
-    margin: 0;
-  }
-  
-  .joinChild {
-    background: linear-gradient(78.66deg, #000d18, #00213e);
-    width: 100%;
-    height: 100%;
-  }
-  
-  .becomeAPartContainer {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
-  
-  .becomeAPart {
-    font-weight: 900;
-  }
-  
-  .linkButton {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: white;
-  }
-  
+  width: 100%;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 5%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2rem;
+  color: #00213e;
+  font-family: Capitana;
+}
+
+.ourTeam {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-right: 52%;
+}
+
+.teamMembersParent {
+  width: 100%;
+  position: relative;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teamMember {
+  position: relative;
+  width: 228px;
+  height: 321px;
+  margin: 0;
+}
+
+.teamMember img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(271deg, transparent, rgba(0, 33, 62, .5) -1px, rgba(51, 101, 138, .6) 1px);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: -8px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: -10px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.join {
+  position: relative;
+  width: 228px;
+  height: 321px;
+  margin: 0;
+}
+
+.joinChild {
+  background: linear-gradient(78.66deg, #000d18, #00213e);
+  width: 100%;
+  height: 100%;
+}
+
+.becomeAPartContainer {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: left; 
+  padding: 10px; 
+  color: white;
+  box-sizing: border-box;
+}
+
+.becomeAPart {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.ofThe {
+  font-size: 1.2rem;
+}
+
+.OurTeamBtn {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.weEmployAnd {
+  margin: 2% 20%;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.teamMembersSlider {
+  display: none;
+}
+
+@media (max-width: 1700px) {
   .weEmployAnd {
-    margin: 2% 20%;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
+    margin: 2% 5%;
   }
-  
-  .teamMembersSlider {
+}
+
+@media (max-width: 1024px) {
+  .teamMembers {
     display: none;
   }
-  
-  @media (max-width: 1024px) {
-    .teamMembers {
-      display: none;
-    }
-  
-    .teamMembersSlider {
-      display: block;
-    }
+
+  .teamMembersSlider {
+    display: block;
   }
-  
-  @media (max-width: 768px) {
-    .team {
-      padding: 50px 2%;
-    }
-  
-    .weEmployAnd {
-      font-size: 0.875rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 50px 2%;
   }
-  
+
+  .weEmployAnd {
+    font-size: 0.875rem;
+  }
+}

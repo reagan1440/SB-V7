@@ -1,22 +1,22 @@
+/* Header.module.css */
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
   padding: 40px 22%;
-  position: fixed;
+  position: fixed; /* Keeps the header fixed at the top */
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
   box-sizing: border-box;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hiding */
 }
 
 .hidden {
-  opacity: 0;
-  transform: translateY(-100%);
-  pointer-events: none;
+  transform: translateY(-100%); /* Move the header out of view */
 }
 
 .logoContainer {
@@ -71,7 +71,7 @@
   position: relative;
   color: black;
   background-color: white;
-  padding: 3px 20px; 
+  padding: 3px 20px;
   border: 2px solid transparent;
   text-align: center;
   display: inline-block;
@@ -100,7 +100,6 @@
 .nav a.contact::after {
   content: none;
 }
-
 
 .hamburger {
   display: none;

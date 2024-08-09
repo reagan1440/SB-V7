@@ -8,13 +8,14 @@ import Beth from '../components/images/team-beth.jpg';
 import Ken from '../components/images/team-ken.jpg';
 import Micheal from '../components/images/team-michael.jpg';
 import Matt from '../components/images/team-matt.jpg';
+import SbButton from '../components/SbButton';
 
 const Team: NextPage = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
   };
 
@@ -23,26 +24,19 @@ const Team: NextPage = () => {
       <h2 className={styles.ourTeam}>Our Team</h2>
       <div className={styles.teamMembersParent}>
         <div className={styles.teamMembers}>
-          <div className={styles.teamMember}>
-            <Image alt="Matt" src={Matt} layout="fill" objectFit="cover" />
-            <div className={styles.nameContainer}>Matt</div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image alt="Ken" src={Ken} layout="fill" objectFit="cover" />
-            <div className={styles.nameContainer}>Ken</div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image alt="Beth" src={Beth} layout="fill" objectFit="cover" />
-            <div className={styles.nameContainer}>Beth</div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image alt="Micheal" src={Micheal} layout="fill" objectFit="cover" />
-            <div className={styles.nameContainer}>Micheal</div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image alt="Alex" src={Alex} layout="fill" objectFit="cover" />
-            <div className={styles.nameContainer}>Alex</div>
-          </div>
+          {[{img: Matt, name: "Matt", description: "Owner"}, 
+            {img: Ken, name: "Ken", description: "Director of Technology"}, 
+            {img: Beth, name: "Beth", description: "Client Manager"}, 
+            {img: Micheal, name: "Micheal", description: "Marketing Director"}, 
+            {img: Alex, name: "Alex", description: "Creative Director"}].map(member => (
+            <div key={member.name} className={styles.teamMember}>
+              <Image alt={member.name} src={member.img} layout="fill" objectFit="cover" />
+              <div className={styles.infoContainer}>
+                <div className={styles.name}>{member.name}</div>
+                <div className={styles.description}>{member.description}</div>
+              </div>
+            </div>
+          ))}
           <div className={styles.join}>
             <div className={styles.joinChild} />
             <div className={styles.becomeAPartContainer}>
@@ -53,54 +47,37 @@ const Team: NextPage = () => {
               <p className={styles.becomeAPartOfThe}>SolutionBuilt</p>
               <p className={styles.becomeAPartOfThe}>{`team. `}</p>
             </div>
-            <div className={styles.linkButton}>
-              <Image className={styles.ringsIcon} alt="Rings" src="/rings.png" width={100} height={70} />
-              <Image className={styles.linkButtonChild} alt="Polygon" src="/Polygon1.svg" width={30} height={70} />
-              <div className={styles.linkButtonItem} />
-              <div className={styles.linkButtonInner} />
-              <b className={styles.joinUs}>Join Us</b>
+            <div className={styles.OurTeamBtn}>
+              <SbButton href='/'>JOIN US</SbButton>
             </div>
           </div>
         </div>
         <div className={styles.teamMembersSlider}>
           <Slider {...settings}>
-            <div>
-              <Image alt="Matt" src={Matt} layout="fill" objectFit="cover" />
-              <div className={styles.nameContainer}>Matt</div>
-            </div>
-            <div>
-              <Image alt="Ken" src={Ken} layout="fill" objectFit="cover" />
-              <div className={styles.nameContainer}>Ken</div>
-            </div>
-            <div>
-              <Image alt="Beth" src={Beth} layout="fill" objectFit="cover" />
-              <div className={styles.nameContainer}>Beth</div>
-            </div>
-            <div>
-              <Image alt="Micheal" src={Micheal} layout="fill" objectFit="cover" />
-              <div className={styles.nameContainer}>Micheal</div>
-            </div>
-            <div>
-              <Image alt="Alex" src={Alex} layout="fill" objectFit="cover" />
-              <div className={styles.nameContainer}>Alex</div>
-            </div>
+            {[{img: Matt, name: "Matt", description: "Owner"}, 
+              {img: Ken, name: "Ken", description: "Director of Technology"}, 
+              {img: Beth, name: "Beth", description: "Client Manager"}, 
+              {img: Micheal, name: "Micheal", description: "Marketing Director"}, 
+              {img: Alex, name: "Alex", description: "Creative Director"}].map(member => (
+              <div key={member.name} className={styles.teamMember}>
+                <Image alt={member.name} src={member.img} layout="fill" objectFit="cover" />
+                <div className={styles.infoContainer}>
+                  <div className={styles.name}>{member.name}</div>
+                  <div className={styles.description}>{member.description}</div>
+                </div>
+              </div>
+            ))}
             <div>
               <div className={styles.join}>
                 <div className={styles.joinChild} />
                 <div className={styles.becomeAPartContainer}>
                   <p className={styles.becomeAPartOfThe}>
-                    <span className={styles.becomeAPart}>Become a part</span>
-                    <span>{` of the `}</span>
+                    <span className={styles.becomeAPart}>Become a part</span> <br></br>
+                    <span className={styles.ofThe}>{` of the SolutionBuilt team.`}</span>
                   </p>
-                  <p className={styles.becomeAPartOfThe}>SolutionBuilt</p>
-                  <p className={styles.becomeAPartOfThe}>{`team. `}</p>
                 </div>
-                <div className={styles.linkButton}>
-                  <Image className={styles.ringsIcon} alt="Rings" src="/rings.png" width={100} height={70} />
-                  <Image className={styles.linkButtonChild} alt="Polygon" src="/Polygon1.svg" width={30} height={70} />
-                  <div className={styles.linkButtonItem} />
-                  <div className={styles.linkButtonInner} />
-                  <b className={styles.joinUs}>Join Us</b>
+                <div className={styles.OurTeamBtn}>
+                  <SbButton href='/'>JOIN US</SbButton>
                 </div>
               </div>
             </div>

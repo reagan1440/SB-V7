@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Layout from '../components/Layout'; 
 import AboutHero from '../components/images/phone-devices 1.svg';
-import styles from '../components/Maintance.module.css';
+import styles from '../components/Maintenance.module.css';
 import WebMaint from '../components/images/web-maintenance-icon.svg';
 import WebHosting from '../components/images/web-hosting-icon.svg';
 import AppMaint from '../components/images/app_maintenance.svg';
@@ -15,26 +15,29 @@ const Maintenance: NextPage = () => (
     <div className={styles.headerSection}>
       <div className={styles.textContent}>
         <h1>Maintenance Services</h1>
-        <p>Regular website maintenance is crucial to ensure your website is running at full capacity. SolutionBuilt offers ongoing web maintenance services for websites, mobile apps, web portals, and web integrations. Using our Google analytics results, we develop strategies that enhance your site security and optimize your overall page experience.</p>
+        <p>
+          Regular website maintenance is crucial to ensure your website is running at full capacity. SolutionBuilt offers ongoing web maintenance services for websites, mobile apps, web portals, and web integrations. Using our Google analytics results, we develop strategies that enhance your site security and optimize your overall page experience.
+        </p>
       </div>
       <div className={styles.imageWrapper}>
         <Image
           src={AboutHero}
           alt="Maintenance Image"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
+          priority
         />
       </div>
     </div>
     <div className={styles.content}>
       <div className={styles.ourMaintenancePlansContainer}>
-        <span>{`Our maintenance plans cover `}</span>
+        <span>Our maintenance plans cover </span>
         <span className={styles.securityUpdates}>security updates</span>
-        <span>{`, `}</span>
+        <span>, </span>
         <span className={styles.technologyChanges}>technology changes</span>
-        <span>{`, `}</span>
+        <span>, </span>
         <span className={styles.releases}>releases</span>
-        <span>{`, and `}</span>
+        <span>, and </span>
         <span className={styles.standards}>standards</span>
         <span>.</span>
       </div>
@@ -58,7 +61,7 @@ const Maintenance: NextPage = () => (
           <div className={styles.websiteMaintenance}>Website Hosting</div>
           <div className={styles.hoverFloatBoxChild} />
           <div className={styles.iconWrapper}>
-            <Image className={styles.webHostingIcon} src={WebHosting} alt="Web Hosting Icon"  objectFit="contain" />
+            <Image className={styles.webHostingIcon} src={WebHosting} alt="Web Hosting Icon" objectFit="contain" />
           </div>
         </div>
         <div className={styles.hoverFloatBox2}>
@@ -75,16 +78,15 @@ const Maintenance: NextPage = () => (
       </div>
     </div>
     <div className={styles.bottomCta}>
-<b className={styles.needMaintenanceServices}>Need Maintenance Services?</b>
-<div className={styles.weRealizeThat}>We realize that not every business owner or employee knows how to update their website or mobile app. That’s why we monitor them regularly for optimal success and even clean up websites or mobile apps that we did not create. Your website needs to be properly monitored on a regularly scheduled basis to ensure its health, speed, and search visibility are kept optimized. For mobile apps we provide plans that include proactive QA testing and updates for new OS and mobile devices. At SolutionBuilt we ensure that someone on our team is always testing your software.</div>
-<div>
-<div className={styles.maintbtn}> 
-<SbButton href= '/'> GET STARTED </SbButton>
-
-</div>
-</div>
-</div>
-<Footer />
+      <b className={styles.needMaintenanceServices}>Need Maintenance Services?</b>
+      <div className={styles.weRealizeThat}>
+        We realize that not every business owner or employee knows how to update their website or mobile app. That’s why we monitor them regularly for optimal success and even clean up websites or mobile apps that we did not create. Your website needs to be properly monitored on a regularly scheduled basis to ensure its health, speed, and search visibility are kept optimized. For mobile apps we provide plans that include proactive QA testing and updates for new OS and mobile devices. At SolutionBuilt we ensure that someone on our team is always testing your software.
+      </div>
+      <div className={styles.maintbtn}> 
+        <SbButton href='/'> GET STARTED </SbButton>
+      </div>
+    </div>
+    <Footer />
   </Layout>
 );
 

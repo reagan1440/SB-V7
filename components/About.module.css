@@ -58,7 +58,7 @@
     position: relative;
     background-color: #fff;
     width: calc(100% - 44%);
-    margin: 0 auto; 
+    margin: 0 22%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,6 +71,14 @@
     color: #33658a;
     font-family: Capitana, sans-serif;
   }
+
+  @media (max-width: 1700px) {
+    .aboutContent {
+      width: calc(100% - 10%);
+      margin: 0 5%; 
+    }
+    
+  }
   
   /* Founding Information */
   .foundedIn2004 {
@@ -80,16 +88,17 @@
     line-height: 1.6; 
     display: block;
   }
+
   
   /* Today SolutionBuilt Container */
   .todaySolutionbuiltIsContainer {
     width: 100%;
     position: relative;
-    font-size: 3.5rem; /* Adjusted font-size for better mobile readability */
+    font-size: 3.5rem; 
     letter-spacing: 0.02em;
     display: block;
     color: #b5b5b5;
-    text-align: left; /* Center text on smaller screens */
+    text-align: left; 
   }
   
   .fullService {
@@ -182,15 +191,38 @@
 
   @media (min-width: 1421px) {
     .content {
-      width: calc(100% - 44%);
-      margin: 0 22%;
+      width: calc(100% - 10%);
+      margin: 0 5%;
     }
   }
   
   .aboutbtn {
-    padding-left: 0%;
+    margin-left: -3.5%;
     padding-top: 2%;
     text-wrap: nowrap;
-
   }
   
+  @media (max-width: 1400px ) {
+    .aboutbtn {
+      margin-left: -4%;
+    }  
+  }
+
+  @media (max-width: 1200px) {
+    .aboutbtn {
+      margin-left: -4.5%;
+    }
+    
+  }
+
+  @media (max-width: 1000px) {
+    .aboutbtn {
+      margin-left: -5%;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .aboutbtn {
+      width: 70px;
+    }  
+  }

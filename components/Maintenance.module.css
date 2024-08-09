@@ -172,7 +172,6 @@
     top: 0px;
     width: 440px;
     height: 289px;
-    /* overflow: hidden; */
     transition: background-color 0.3s ease, transform 0.3s ease, height 0.3s ease;
 }
 
