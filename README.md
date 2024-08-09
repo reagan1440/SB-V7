@@ -232,14 +232,29 @@ CSS Modules are a popular way to write modular and reusable CSS in web developme
 
 ## Why I choose to use Modules
 
-                                            Comparison with Global CSS
+### Comparison with Global CSS
 
-Feature	                              Global CSS	                        CSS Modules
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#f4a261', 'edgeLabelBackground':'#fefae0'}}}%%
+graph TD
+    A[Comparison with Global CSS]
+    A -->|Feature| B[Scope]
+    A -->|Feature| C[Class Name Conflicts]
+    A -->|Feature| D[Maintainability]
+    A -->|Feature| E[Usability]
 
-Scope	                              Global, affecting all elements	    Local, affecting only the module
-Class Name Conflicts	              Common and problematic	            Virtually non-existent
-Maintainability	                      Can become complex	                Cleaner, component-based
-Usability	                          Requires careful management	        Simple and straightforward
+    B -->|Global CSS| F(Global, affecting all elements)
+    B -->|CSS Modules| G(Local, affecting only the module)
+
+    C -->|Global CSS| H(Common and problematic)
+    C -->|CSS Modules| I(Virtually non-existent)
+
+    D -->|Global CSS| J(Can become complex)
+    D -->|CSS Modules| K(Cleaner, component-based)
+
+    E -->|Global CSS| L(Requires careful management)
+    E -->|CSS Modules| M(Simple and straightforward)
+
 
 
 when creating a new className to use in your module css (remember everything in react is case sensitive-----except pages for some reason?)
@@ -291,3 +306,20 @@ When we run `next dev` the next time, Next.js will start looking for any `.ts` o
 Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
 
 A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+
+```markdown
+# License
+
+## Proprietary License
+
+Copyright (c) 2024 Solutionbuilt and Searched Marketing
+
+All rights reserved. 
+
+Permission to use, copy, modify, and distribute this software for non-commercial purposes is hereby granted, provided that the above copyright notice and this permission notice are included in all copies or substantial portions of the Software.
+
+**Commercial use** of this software requires a separate commercial license agreement. For more information on commercial licensing, please contact [Your Company/Name] at [Your Contact Information].
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For any questions or to request commercial licensing, please contact [Your Company/Name] at [Your Contact Information].
